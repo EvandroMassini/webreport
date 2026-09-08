@@ -1,0 +1,71 @@
+id;nome;ordem;descricao;status
+7;BandType;1;"0=Title
+1=Head
+2=ColumnHead
+3=Detail
+4=Sumary
+5=ColumnFooter
+6=Footer.";1
+34;Align;99;Alinhamento melhorado. Pode assumir um dos seguintes valores: faLeft (Alinhado à esquerda), faTop (Alinhado acima), faRight (Alinhado à direita) ou faBottom (Alinhado abaixo).;0
+20;Height;15;Altura do objeto.;1
+62;Line-height;0;Altura padrão das linhas do elemento;1
+4;AnchorsRight;99;Ancoramento a direita. Pode assumir um dos seguintes valores: True (ancorado) ou False (não ancorado).;1
+3;AnchorsLeft;99;Ancoramento a esquerda. Pode assumir um dos seguintes valores: True (ancorado) ou False (não ancorado).;1
+2;AnchorsBotton;99;Ancoramento inferior. Pode assumir um dos seguintes valores: True (ancorado) ou False (não ancorado).;1
+5;AnchorsTop;99;Ancoramento superior. Pode assumir um dos seguintes valores: True (ancorado) ou False (não ancorado).;1
+36;Angle;99;Ângulo de inclinação.;0
+42;MasterFields;99;Campo externo para aplicação de filtro.;0
+57;LinkedFields;99;Campo local para aplicação de filtro.;0
+10;DataField;50;Campo relacionado ao banco de dados que será exibido pelo objeto.;1
+59;LoadFromFile;99;Carrega informações de arquivo em disco.;0
+50;LoadFromFile;0;Carrega relatório do caminho informado.;0
+51;LoadFromField;0;Carrega relatório do campo informado.;0
+24;AlternateColor;99;Cor alternativa para grade de informações.;1
+45;FontColor;99;Define a cor da fonte utilizada no objeto.;0
+53;HoldStyle;98;Define as regras de ancoragem entre dois controles.;0
+17;FontName;99;Define o nome da fonte utilizada no objeto.;1
+55;CarbonCopies;99;Define o número de cópias da Band;0
+56;NextReport;99;Define o relatório a ser exibido na sequência.;1
+18;FontSize;99;Define o tamanho da fonte utilizada no objeto.;1
+40;BarcodeType;99;Define o tipo de código de barras a ser utilizado.;0
+16;FontItalic;99;Define se a fonte do objeto será em itálico. Pode assumir um dos seguintes valores: True (fonte em itálico) ou False (fonte normal).;1
+15;FontBold;99;Define se a fonte do objeto será em negrito. Pode assumir um dos seguintes valores: True (fonte em negrito) ou False (fonte normal).;1
+19;FontUnderline;99;Define se a fonte do objeto será sublinhada. Pode assumir um dos seguintes valores: True (fonte sublinhada) ou False (fonte normal).;1
+61;HolderHeight;99;Define se o objeto irá acompanhar a altura de outro objeto;1
+60;isHTML;99;Define se o objeto irá exibir conteúdo HTML ou texto;1
+13;BorderRight;99;Desenhar borda direita.;1
+12;BorderLeft;99;Desenhar borda esquerda.;1
+11;BorderBottom;99;Desenhar borda inferior.;1
+14;BorderTop;99;Desenhar borda superior.;1
+48;Organization;99;Determina a direção para a impressão das bandas.;0
+46;ShowText;99;Determina se e como serão exibidas as informações junto com as barras.;0
+21;IntegralHeight;99;Determina se o objeto deve ser imprsso integralmente.;0
+30;Visible;99;Determina se o objeto será visível em tempo de impressão.;1
+1;Alignment;10;Especifica como o texto deve ser alinhado dentro de um objeto. Pode assumir os seguinte valores: taLeftJustify (alinhado a esquerda), taCenter (centralizado) ou taRightJustify (alinhado a direita).;1
+25;PageBreaking;99;Especifica se e como a band ou pager irá forçar a quebra de página. Pode assumir um dos seguintes valores: pbBeforePrInteger(A quebra de página será verificada antes da impressão) ou pbAfterPrInteger(A quebra de página será verificada após a impressão).;1
+49;Currency;99;Especifica se o objeto exibe valores monetários.;1
+58;ShowProgress;99;Exibe barra de progresso durante a criação do relatório.;0
+52;DataFormula;99;Fórmula relacionada aos campos do banco de dados que será exibido pelo objeto.;1
+44;Backgroud;99;Imagem de fundo.;0
+31;Width;15;Largura do objeto.;1
+37;Lines;99;Lista contendo as linhas de texto do memo.;1
+26;MarginRight;99;Margem direita em milímetros.;1
+23;MarginLeft;99;Margem esquerda em milímetros.;1
+8;MarginBottom;99;Margem inferior em milímetros.;1
+29;MarginTop;99;Margem superior em milímetros.;1
+32;DisplayMask;50;Mascara de formatação.;1
+33;Parent;0;Nome do controle de referência.;1
+54;Holder;99;O mecanismo por trás da propriedade holder é um dos recursos mais interessantes do FortesReport. Esta propriedade aponta para um controle que servirá como âncora, como referência de posicionamento. É possível informar para um RLDBText de uma band detalhe que sua posição horizontal deve se mantêr sempre igual ao RLLabel correspondente no cabeçalho, indicando RLDBText.Holder:=RLLabel. Deste modo, ao mover o label do cabeçalho, em tempo de design ou impressão, o RLDBText será movido junto com ele. Há várias opções de ancoragem e também há a possibilidade de um controle possuir dois holders: um para referência horizontal e outro para vertical, por exemplo.;0
+43;Orientation;99;"Orientação do papel.
+0 = poPortrait
+1 = poLandscape.";1
+28;Top;10;Posicionamento do objeto referente à parte superior.;1
+22;Left;15;Posicionamento do objeto referente ao lado esquerdo.;1
+6;AutoSize;5;Redimensionamento automático.;1
+38;Picture;99;Representa a imagem que aparece no fundo do controle.;0
+35;SQL;99;Sub consulta utilizada para preencher dados em sub-detail.;1
+27;Text;99;Texto a ser exibido pelo objeto.;1
+9;Caption;99;Texto a ser exibido pelo objeto.;1
+47;DrawKind;99;Tipo de figura geométrica.;0
+39;Info;99;Tipo de informação a ser exibida.;1
+41;ColCount;99;Total de colunas da grid.;0

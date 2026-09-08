@@ -1,0 +1,515 @@
+{
+  "method": "Comparação de funções com Backup - Meu Código WR, complementada pelo histórico da revisão. Diferenças de corpo incluem comentários e formatação; não constituem atribuição linha a linha.",
+  "sources": [
+    {
+      "file": "webreport.js",
+      "originalSha256": "b69a4e45e638e1fcc87d3fd6b02c84bd5a3bd97a028f59e862c6b1d391b4521e"
+    },
+    {
+      "file": "webreport.core.js",
+      "originalSha256": "10ed3306251cf4fa489fbb32269da1e564824e1b0a95022b2af34c30e1773e1a"
+    }
+  ],
+  "functions": [
+    {
+      "file": "src/webreport.js",
+      "function": "resetReportTimings",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.js",
+      "function": "formatReportDuration",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.js",
+      "function": "loadReportPreferences",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.js",
+      "function": "saveReportPreferences",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.js",
+      "function": "recordReportTiming",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.js",
+      "function": "getReportDiagnosticSnapshot",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.js",
+      "function": "downloadReportDiagnostics",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.js",
+      "function": "showPerformanceDetails",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.js",
+      "function": "cancelActiveReportWork",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.js",
+      "function": "mergeReportConfig",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.js",
+      "function": "configureWebReport",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.js",
+      "function": "getEffectiveReportConfig",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.js",
+      "function": "WRgetPageMetrics",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.js",
+      "function": "sanitizeReportHtml",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.js",
+      "function": "setReportHtml",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.js",
+      "function": "getStructureProperty",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.js",
+      "function": "validateReportDefinition",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.js",
+      "function": "showReportDiagnostics",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.js",
+      "function": "showWebReportMessage",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.js",
+      "function": "setWaitingState",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.js",
+      "function": "normalizeReportResponse",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.js",
+      "function": "isLegacyServerPrompt",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.js",
+      "function": "mountLegacyServerPrompt",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.js",
+      "function": "decodeBase64File",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.js",
+      "function": "downloadBlob",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.js",
+      "function": "handleReportResponse",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.js",
+      "function": "getReport",
+      "status": "alterada pela IA"
+    },
+    {
+      "file": "src/webreport.js",
+      "function": "createReportButton",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.js",
+      "function": "closeReportActionMenus",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.js",
+      "function": "getPrintMenuOptions",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.js",
+      "function": "createViewerShell",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.js",
+      "function": "updateGenerationProgress",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.js",
+      "function": "CreateContainer",
+      "status": "alterada pela IA"
+    },
+    {
+      "file": "src/webreport.js",
+      "function": "renderReports",
+      "status": "alterada pela IA"
+    },
+    {
+      "file": "src/webreport.js",
+      "function": "populateReportSelector",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.js",
+      "function": "finishReportViewer",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.js",
+      "function": "getReportPages",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.js",
+      "function": "buildPageMap",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.js",
+      "function": "observeReportPages",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.js",
+      "function": "setCurrentPage",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.js",
+      "function": "scrollToReportPage",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.js",
+      "function": "materializeReportPage",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.js",
+      "function": "materializeAllReportPages",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.js",
+      "function": "deferReportPages",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.js",
+      "function": "bindPerformanceFooter",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.js",
+      "function": "setReportZoom",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.js",
+      "function": "searchReportText",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.js",
+      "function": "installViewerKeyboard",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.js",
+      "function": "installPrintPageRules",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.js",
+      "function": "PrintReport",
+      "status": "alterada pela IA"
+    },
+    {
+      "file": "src/webreport.js",
+      "function": "escapeCsvCell",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.js",
+      "function": "SaveReport",
+      "status": "alterada pela IA"
+    },
+    {
+      "file": "src/webreport.js",
+      "function": "ExportCurrentPageHtml",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.js",
+      "function": "runReportRegressionChecks",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.js",
+      "function": "registerReportExporter",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.js",
+      "function": "CloseReport",
+      "status": "alterada pela IA"
+    },
+    {
+      "file": "src/webreport.core.js",
+      "function": "applyReportPageMetrics",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.core.js",
+      "function": "evaluateReportFormula",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.core.js",
+      "function": "CreateReportGenerator",
+      "status": "alterada pela IA"
+    },
+    {
+      "file": "src/webreport.core.js",
+      "function": "LogCreateReportDiagnostics",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.core.js",
+      "function": "CreateReport",
+      "status": "alterada pela IA"
+    },
+    {
+      "file": "src/webreport.core.js",
+      "function": "CreateReportAsync",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.core.js",
+      "function": "GetRealTop",
+      "status": "original preservada"
+    },
+    {
+      "file": "src/webreport.core.js",
+      "function": "getFirstDetailGroupToMove",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.core.js",
+      "function": "CheckHeight",
+      "status": "alterada pela IA"
+    },
+    {
+      "file": "src/webreport.core.js",
+      "function": "CloseElement",
+      "status": "alterada pela IA"
+    },
+    {
+      "file": "src/webreport.core.js",
+      "function": "groupTemplateContainsDetail",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.core.js",
+      "function": "GetElements",
+      "status": "alterada pela IA"
+    },
+    {
+      "file": "src/webreport.core.js",
+      "function": "checkPageLimit",
+      "status": "alterada pela IA"
+    },
+    {
+      "file": "src/webreport.core.js",
+      "function": "createGroupInstance",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.core.js",
+      "function": "getPageBreakingMode",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.core.js",
+      "function": "currentPageContainsDetail",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.core.js",
+      "function": "hasPendingDetailOutput",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.core.js",
+      "function": "createExplicitPageBreak",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.core.js",
+      "function": "GetDetails",
+      "status": "alterada pela IA"
+    },
+    {
+      "file": "src/webreport.core.js",
+      "function": "checkHolderHeigth",
+      "status": "alterada pela IA"
+    },
+    {
+      "file": "src/webreport.core.js",
+      "function": "getFontSize",
+      "status": "original preservada"
+    },
+    {
+      "file": "src/webreport.core.js",
+      "function": "ancoreElement",
+      "status": "alterada pela IA"
+    },
+    {
+      "file": "src/webreport.core.js",
+      "function": "char_convert",
+      "status": "original preservada"
+    },
+    {
+      "file": "src/webreport.core.js",
+      "function": "getReportElementById",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.core.js",
+      "function": "getPageContentBottom",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.core.js",
+      "function": "getReservedPageHeight",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.core.js",
+      "function": "getLongTextBreakPoints",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.core.js",
+      "function": "repeatTableHeaders",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.core.js",
+      "function": "renderLongTextRange",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.core.js",
+      "function": "longTextFitsPage",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.core.js",
+      "function": "findLongTextBreak",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.core.js",
+      "function": "finishLongTextPart",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.core.js",
+      "function": "resizeAnchorToChildren",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.core.js",
+      "function": "getLongTextParentHeight",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.core.js",
+      "function": "prepareTitleContinuationContainer",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.core.js",
+      "function": "createLongTextPage",
+      "status": "criada pela IA"
+    },
+    {
+      "file": "src/webreport.core.js",
+      "function": "checkLongText",
+      "status": "alterada pela IA"
+    },
+    {
+      "file": "src/webreport.core.js",
+      "function": "NewPage",
+      "status": "alterada pela IA"
+    },
+    {
+      "file": "src/webreport.core.js",
+      "function": "Compute",
+      "status": "alterada pela IA"
+    },
+    {
+      "file": "src/webreport.core.js",
+      "function": "Populate",
+      "status": "alterada pela IA"
+    },
+    {
+      "file": "src/webreport.core.js",
+      "function": "SetMask",
+      "status": "alterada pela IA"
+    },
+    {
+      "file": "src/webreport.core.js",
+      "function": "FindItem",
+      "status": "original preservada"
+    },
+    {
+      "file": "src/webreport.core.js",
+      "function": "SetHeight",
+      "status": "alterada pela IA"
+    },
+    {
+      "file": "src/webreport.core.js",
+      "function": "ResetCount",
+      "status": "original preservada"
+    }
+  ]
+}

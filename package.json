@@ -1,0 +1,15 @@
+{
+  "name": "webreport-browser",
+  "version": "0.1.0",
+  "license": "MIT",
+  "author": "Evandro / GWBM",
+  "private": true,
+  "description": "Visualizador de relatórios JSON com paginação, agrupamento e impressão no navegador",
+  "scripts": {
+    "start": "node tools/serve.cjs",
+    "test": "node tests/run.cjs",
+    "check": "node --check src/webreport.js && node --check src/webreport.core.js"
+  },
+  "engines": { "node": ">=20" },
+  "devDependencies": { "playwright": "1.62.1" }
+}

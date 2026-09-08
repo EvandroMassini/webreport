@@ -1,0 +1,25 @@
+/* Criado pela IA: estilo apenas das páginas demonstrativas, independente do visualizador. */
+body { margin: 0; color: #1e293b; background: #eff4fa; font: 16px/1.6 system-ui, sans-serif; }
+body > main { max-width: 840px; margin: 8vh auto; padding: 32px; }
+h1 { font-size: clamp(32px, 5vw, 54px); line-height: 1.12; letter-spacing: -.04em; }
+.eyebrow { color: #2563eb; font-size: 12px; font-weight: 700; letter-spacing: .12em; }
+nav { display: grid; gap: 16px; margin: 32px 0; }
+a { color: #1d4ed8; }
+.card { display: grid; padding: 24px; background: white; border: 1px solid #dbe3ee; border-radius: 16px; text-decoration: none; }
+.card:hover { border-color: #2563eb; }
+.card span { color: #64748b; }
+body > main button { border: 0; border-radius: 10px; padding: 14px 22px; background: #2563eb; color: white; font: inherit; cursor: pointer; }
+body > main button:disabled { opacity: .5; cursor: wait; }
+#status { display: block; margin: 16px 0; }
+/* Criado pela IA: parâmetros em diálogo acessível, com layout próprio dos exemplos. */
+.example-parameters { width: min(540px, calc(100vw - 48px)); max-height: 85vh; padding: 0; color: #1e293b; background: white; border: 1px solid #dbe3ee; border-radius: 16px; box-shadow: 0 24px 70px #0f172a40; }
+.example-parameters::backdrop { background: #0f172a88; backdrop-filter: blur(4px); }
+.example-parameters form { padding: 24px; }
+.example-parameters h2 { margin-top: 0; }
+.example-parameters label { display: grid; gap: 5px; margin: 14px 0; font-size: 14px; font-weight: 600; }
+.example-parameters input, .example-parameters select { box-sizing: border-box; width: 100%; min-height: 42px; padding: 8px 12px; background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 8px; font: inherit; color: inherit; }
+.example-parameters :focus-visible { outline: 3px solid #93c5fd; outline-offset: 2px; }
+.example-parameters footer { display: flex; justify-content: flex-end; gap: 10px; margin-top: 24px; }
+.example-parameters button { padding: 10px 18px; border-radius: 8px; border: 1px solid #cbd5e1; font: inherit; cursor: pointer; }
+.example-parameters button[type=submit] { background: #2563eb; color: white; border-color: #2563eb; }
+.example-parameters [role=alert] { color: #b91c1c; }

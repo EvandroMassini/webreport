@@ -1,0 +1,835 @@
+/*! WebReport — Copyright (c) 2026 Evandro / GWBM. SPDX-License-Identifier: MIT. Veja LICENSE. */
+/**
+ * Estilos do visualizador reformulados pela IA sobre o WebReport de Evandro / GWBM.
+ * Atribuição por bloco baseada no histórico desta revisão; não há backup CSS original completo.
+ * Variáveis --wr-* controlam o tema. @media print e regras dinâmicas no JS controlam as folhas.
+ */
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+:root {
+    --wr-accent: #2563eb;
+    --wr-accent-strong: #1d4ed8;
+    --wr-surface: #ffffff;
+    --wr-surface-muted: #f8fafc;
+    --wr-canvas: #e8edf4;
+    --wr-text: #172033;
+    --wr-text-muted: #64748b;
+    --wr-border: #dbe3ee;
+    --wr-shadow: 0 24px 70px rgba(15, 23, 42, 0.28);
+    --wr-radius: 16px;
+}
+
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+body.wr-report-open {
+    overflow: hidden;
+}
+
+/* Indicador de progresso compartilhado pela geração. */
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-spinner {
+    width: 22px;
+    height: 22px;
+    flex: 0 0 auto;
+    border: 3px solid #dbeafe;
+    border-top-color: var(--wr-accent);
+    border-radius: 50%;
+    animation: wr-spin 700ms linear infinite;
+}
+
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+@keyframes wr-spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Interface principal do visualizador. */
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-report-backdrop,
+.wr-waiting-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 999998;
+    display: grid;
+    place-items: center;
+    padding: clamp(8px, 2vw, 24px);
+    background: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(9px);
+}
+
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-report-dialog {
+    display: grid;
+    grid-template-rows: auto minmax(0, 1fr);
+    width: min(1680px, 97vw);
+    height: min(1040px, 96vh);
+    overflow: hidden;
+    color: var(--wr-text);
+    background: var(--wr-surface);
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    border-radius: var(--wr-radius);
+    box-shadow: var(--wr-shadow);
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-brand,
+.wr-toolbar-controls,
+.wr-page-navigation,
+.wr-zoom-controls {
+    display: flex;
+    align-items: center;
+}
+
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-brand {
+    min-width: 220px;
+    gap: 10px;
+    margin-right: auto;
+    min-width: 0;
+    flex: 1 1 auto;
+    overflow: hidden;
+}
+
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-brand > div {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-brand strong { font-size: 14px; }
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-brand small { margin-top: 3px; color: var(--wr-text-muted); font-size: 11px; }
+
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-brand-mark {
+    display: grid;
+    width: 36px;
+    height: 36px;
+    place-items: center;
+    color: #fff;
+    background: linear-gradient(145deg, #3b82f6, #1d4ed8);
+    border-radius: 10px;
+    box-shadow: 0 6px 14px rgba(37, 99, 235, 0.25);
+    font-weight: 800;
+    flex: 0 0 36px;
+}
+
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-toolbar-controls {
+    min-width: 0;
+    gap: 7px;
+    min-width: 0;
+    flex: 0 1 auto;
+    flex-wrap: nowrap;
+    margin-left: auto;
+    white-space: nowrap;
+}
+
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-button {
+    display: inline-flex;
+    min-height: 36px;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    padding: 0 11px;
+    color: #334155;
+    background: #fff;
+    border: 1px solid var(--wr-border);
+    border-radius: 9px;
+    cursor: pointer;
+    font: 600 12px/1 inherit;
+    transition: 150ms ease;
+}
+
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-button:hover {
+    color: var(--wr-accent-strong);
+    background: #eff6ff;
+    border-color: #bfdbfe;
+}
+
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-button:focus-visible,
+.wr-search input:focus-visible,
+.wr-page-input:focus-visible {
+    outline: 3px solid rgba(37, 99, 235, 0.22);
+    outline-offset: 1px;
+}
+
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-button-icon { font-size: 18px; line-height: 1; }
+
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-close:hover { color: #b91c1c; background: #fef2f2; border-color: #fecaca; }
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-diagnostics { color: #92400e; background: #fffbeb; border-color: #fde68a; }
+
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-search {
+    display: flex;
+    height: 36px;
+    align-items: center;
+    gap: 6px;
+    padding: 0 8px;
+    background: var(--wr-surface-muted);
+    border: 1px solid var(--wr-border);
+    border-radius: 9px;
+    min-width: 230px;
+    min-width: min(230px, 18vw);
+    flex: 1 1 230px;
+}
+
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-search input {
+    width: clamp(90px, 12vw, 180px);
+    padding: 0;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    font: 500 12px inherit;
+    height: auto;
+    font: inherit;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-search output {
+    min-width: 20px;
+    color: var(--wr-text-muted);
+    font-size: 10px;
+    text-align: right;
+}
+
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-page-navigation,
+.wr-zoom-controls {
+    gap: 3px;
+    padding: 3px;
+    background: var(--wr-surface-muted);
+    border: 1px solid var(--wr-border);
+    border-radius: 10px;
+}
+
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-page-navigation .wr-button,
+.wr-zoom-controls .wr-button {
+    width: 29px;
+    min-height: 28px;
+    padding: 0;
+    background: transparent;
+    border: 0;
+}
+
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-page-navigation label {
+    display: flex;
+    align-items: center;
+    color: var(--wr-text-muted);
+    font-size: 11px;
+}
+
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-page-input {
+    width: 36px;
+    padding: 2px;
+    color: var(--wr-text);
+    background: #fff;
+    border: 1px solid var(--wr-border);
+    border-radius: 6px;
+    text-align: center;
+    box-sizing: border-box;
+    font: 600 12px/1 system-ui, sans-serif;
+}
+
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-page-input::-webkit-inner-spin-button { appearance: none; }
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-zoom-value { min-width: 46px; color: var(--wr-text-muted); font-size: 11px; text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    line-height: 1;
+}
+
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-export-wrap { position: relative; }
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-export-menu {
+    position: absolute;
+    top: calc(100% + 7px);
+    right: 0;
+    z-index: 10;
+    display: none;
+    min-width: 190px;
+    padding: 6px;
+    background: #fff;
+    border: 1px solid var(--wr-border);
+    border-radius: 10px;
+    box-shadow: 0 14px 36px rgba(15, 23, 42, 0.18);
+}
+
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-export-wrap.is-open .wr-export-menu { display: grid; }
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-export-menu button {
+    padding: 9px 10px;
+    color: var(--wr-text);
+    background: transparent;
+    border: 0;
+    border-radius: 7px;
+    cursor: pointer;
+    text-align: left;
+}
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-export-menu button:hover { background: #eff6ff; }
+
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-viewer-body {
+    display: grid;
+    grid-template-columns: 52px minmax(0, 1fr);
+    grid-template-rows: minmax(0, 1fr) auto;
+    min-height: 0;
+    background: var(--wr-canvas);
+    grid-template-columns: minmax(0, 1fr);
+}
+
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-page-map {
+    grid-row: 1 / 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    overflow-y: auto;
+    padding: 12px 7px;
+    background: rgba(248, 250, 252, 0.95);
+    border-right: 1px solid var(--wr-border);
+}
+
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-page-map button {
+    width: 34px;
+    height: 34px;
+    color: var(--wr-text-muted);
+    background: #fff;
+    border: 1px solid var(--wr-border);
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 11px;
+}
+
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-page-map button.is-active {
+    color: #fff;
+    background: var(--wr-accent);
+    border-color: var(--wr-accent);
+}
+
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-report-preview {
+    min-height: 0;
+    overflow: auto;
+    padding: clamp(18px, 3vw, 42px);
+    background: radial-gradient(circle at top, rgba(255,255,255,.82), transparent 430px), var(--wr-canvas);
+    scrollbar-color: #94a3b8 transparent;
+    scrollbar-width: thin;
+}
+
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-report-pages .wr_page {
+    position: relative !important;
+    left: auto !important;
+    zoom: var(--wr-page-zoom, 1);
+    margin: 0 auto 32px !important;
+    background: #fff;
+    border: 0 !important;
+    border-radius: 2px;
+    box-shadow: 0 6px 24px rgba(15,23,42,.16) !important;
+    transform-origin: top center;
+}
+
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-preview-ready .wr_page {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 1123px;
+}
+
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-status-dot {
+    display: inline-block;
+    width: 7px;
+    min-width: 7px;
+    height: 7px;
+    min-height: 7px;
+    flex: 0 0 7px;
+    padding: 0;
+    border: 0;
+    background: #22c55e;
+    border-radius: 999px;
+    box-sizing: border-box;
+    box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.14);
+}
+
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-container-footer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 28px;
+    padding: 7px 14px;
+    color: var(--wr-text-muted);
+    background: var(--wr-surface-muted);
+    border-top: 1px solid var(--wr-border);
+    font-size: 11px;
+}
+
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-waiting-card {
+    display: grid;
+    min-width: min(340px, 90vw);
+    justify-items: center;
+    gap: 10px;
+    padding: 24px;
+    color: var(--wr-text);
+    background: rgba(255,255,255,.98);
+    border: 1px solid var(--wr-border);
+    border-radius: 16px;
+    box-shadow: var(--wr-shadow);
+    font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+}
+
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-waiting-title { font-size: 15px; font-weight: 700; }
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-waiting-message { color: var(--wr-text-muted); font-size: 12px; }
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-progress { width: 100%; height: 7px; accent-color: var(--wr-accent); }
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-cancel-generation { margin-top: 4px; }
+
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-longtext-continuation::before {
+    content: attr(data-wr-continuation);
+    display: block;
+    margin-bottom: 4px;
+    color: var(--wr-text-muted);
+    font-size: 9px;
+    font-style: italic;
+}
+
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+::highlight(wr-search) {
+    color: #172033;
+    background: #fde047;
+}
+
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+@media (max-width: 1050px) {
+    .wr-brand > div,
+    .wr-button-label,
+    .wr-page-map { display: none; }
+    .wr-viewer-body { grid-template-columns: 1fr; }
+    .wr-toolbar { overflow-x: auto; }
+}
+
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+@media (max-width: 680px) {
+    .wr-report-backdrop { padding: 0; }
+    .wr-report-dialog { width: 100vw; height: 100dvh; border-radius: 0; }
+    .wr-search { display: none; }
+    .wr-report-preview { padding: 12px; }
+}
+
+
+/* Refinamentos do cabeçalho e controles. */
+
+
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-search-icon {
+    width: 18px;
+    height: 18px;
+    flex: 0 0 18px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+}
+
+
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-search input:focus,
+.wr-search input:focus-visible {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-page-navigation label,
+.wr-page-input,
+.wr-page-total,
+.wr-zoom-value {
+    height: 28px;
+    align-items: center;
+    font-size: 12px;
+    line-height: 28px;
+}
+
+
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-page-total {
+    display: inline-flex;
+    padding: 0 4px;
+}
+
+
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-report-name {
+    display: block;
+    max-width: min(38vw, 520px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+/* ================================================================
+   Componentes modernos consolidados do visualizador
+   ================================================================ */
+
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    overflow: hidden !important;
+    clip: rect(0 0 0 0) !important;
+    clip-path: inset(50%) !important;
+    white-space: nowrap !important;
+}
+
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-report-dialog:focus {
+    outline: none;
+}
+
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-report-jump {
+    display: flex;
+    height: 36px;
+    align-items: center;
+    min-width: 120px;
+    flex: 0 1 220px;
+}
+
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-report-jump[hidden] {
+    display: none;
+}
+
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-report-jump select {
+    max-width: min(220px, 18vw);
+    height: 36px;
+    padding: 0 30px 0 10px;
+    color: var(--wr-text);
+    background: var(--wr-surface-muted);
+    border: 1px solid var(--wr-border);
+    border-radius: 9px;
+    font: 500 12px/1 system-ui, sans-serif;
+    text-overflow: ellipsis;
+    width: 100%;
+    min-width: 0;
+}
+
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-report-jump select:focus-visible {
+    outline: 3px solid rgba(37, 99, 235, 0.22);
+    outline-offset: 1px;
+}
+
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-print-wrap,
+.wr-export-wrap {
+    position: relative;
+}
+
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-print-menu,
+.wr-export-menu {
+    position: absolute;
+    top: calc(100% + 7px);
+    right: 0;
+    z-index: 10;
+    display: none;
+    min-width: 190px;
+    padding: 6px;
+    background: #fff;
+    border: 1px solid var(--wr-border);
+    border-radius: 10px;
+    box-shadow: 0 14px 36px rgba(15, 23, 42, 0.18);
+}
+
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-print-wrap.is-open .wr-print-menu,
+.wr-export-wrap.is-open .wr-export-menu {
+    display: grid;
+}
+
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-print-menu button,
+.wr-export-menu button {
+    padding: 9px 10px;
+    color: var(--wr-text);
+    background: transparent;
+    border: 0;
+    border-radius: 7px;
+    cursor: pointer;
+    font: inherit;
+    text-align: left;
+}
+
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-print-menu button:hover,
+.wr-export-menu button:hover {
+    background: #eff6ff;
+}
+
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-performance-summary {
+    overflow: hidden;
+    padding: 0;
+    color: inherit;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    font: inherit;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-performance-summary:hover {
+    color: var(--wr-accent-strong);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-page-deferred::after {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    color: var(--wr-text-muted);
+    content: "Preparando página…";
+    font: 500 12px/1 system-ui, sans-serif;
+}
+
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-close {
+    display: flex;
+    width: 38px;
+    min-width: 38px;
+    height: 36px;
+    min-height: 36px;
+    max-height: 36px;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-close .wr-button-icon {
+    display: flex;
+    width: 18px;
+    height: 18px;
+    flex: 0 0 18px;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    transform: none;
+}
+
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-close-icon {
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2.25;
+    stroke-linecap: round;
+    transform: none;
+}
+
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+@media (max-width: 1180px) {
+    .wr-report-jump select {
+        max-width: 150px;
+    }
+}
+
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+@media (max-width: 900px) {
+    .wr-report-jump {
+        display: none;
+    }
+}
+
+
+/* Estrutura principal do cabeçalho: marca e controles permanecem na mesma linha. */
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-toolbar {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    width: 100%;
+    min-width: 0;
+    min-height: 64px;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 12px;
+    padding: 10px 14px 10px 18px;
+    background: rgba(255, 255, 255, 0.96);
+    border-bottom: 1px solid var(--wr-border);
+    box-sizing: border-box;
+}
+
+
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+.wr-toolbar-controls > .wr-button,
+.wr-toolbar-controls > .wr-print-wrap,
+.wr-toolbar-controls > .wr-export-wrap,
+.wr-page-navigation,
+.wr-zoom-controls {
+    flex: 0 0 auto;
+}
+
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+@media (max-width: 1250px) {
+    .wr-toolbar {
+        gap: 7px;
+        padding-inline: 10px;
+    }
+
+    .wr-brand {
+        flex-basis: 180px;
+    }
+
+    .wr-search {
+        min-width: 150px;
+        flex-basis: 180px;
+    }
+
+    .wr-toolbar-controls > .wr-button .wr-button-label,
+    .wr-print-wrap .wr-button-label,
+    .wr-export-wrap .wr-button-label {
+        display: none;
+    }
+
+    .wr-toolbar-controls > .wr-button,
+    .wr-print-wrap > .wr-button,
+    .wr-export-wrap > .wr-button {
+        width: 38px;
+        padding: 0;
+    }
+}
+
+/* Impressão consolidada: uma página do relatório corresponde a uma folha física. */
+/* IA: bloco criado ou alterado na modernização do visualizador. */
+@media print {
+    @page {
+        margin: 0;
+    }
+
+    html,
+    body {
+        width: auto !important;
+        height: auto !important;
+        overflow: visible !important;
+        background: #fff !important;
+    }
+
+    body.wr-report-open > *:not(#wr_report_backdrop) {
+        display: none !important;
+    }
+
+    #wr_report_backdrop,
+    #wr_report_dialog,
+    .wr-viewer-body,
+    #wr_report_preview,
+    #wr_container_body {
+        position: static !important;
+        display: block !important;
+        width: auto !important;
+        height: auto !important;
+        max-width: none !important;
+        max-height: none !important;
+        overflow: visible !important;
+        inset: auto !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        background: #fff !important;
+        border: 0 !important;
+        box-shadow: none !important;
+        backdrop-filter: none !important;
+    }
+
+    .wr-toolbar,
+    .wr-page-map,
+    .wr-container-footer {
+        display: none !important;
+    }
+
+    #wr_container_body .wr_page {
+        position: relative !important;
+        display: none !important;
+        overflow: hidden !important;
+        zoom: 1 !important;
+        margin: 0 !important;
+        border: 0 !important;
+        box-shadow: none !important;
+        box-sizing: border-box !important;
+        content-visibility: visible !important;
+        contain: none !important;
+        break-before: auto;
+        break-after: auto;
+        break-inside: avoid-page;
+        page-break-before: auto;
+        page-break-after: auto;
+        page-break-inside: avoid;
+    }
+
+    #wr_container_body .wr_page.wr-print-included {
+        display: block !important;
+    }
+
+    #wr_container_body .wr_page.wr-print-excluded {
+        display: none !important;
+        break-before: auto !important;
+        break-after: auto !important;
+        page-break-before: auto !important;
+        page-break-after: auto !important;
+    }
+
+    #wr_container_body .wr_page.wr-print-included:not(.wr-print-first) {
+        break-before: page;
+        page-break-before: always;
+    }
+
+    #wr_container_body .wr_page.wr-print-last {
+        break-after: auto !important;
+        page-break-after: auto !important;
+    }
+
+    .wr-page-deferred::after {
+        display: none !important;
+    }
+}

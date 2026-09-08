@@ -1,0 +1,21 @@
+id;nome;descricao
+2;RLDetailGrid;Banda de tipo fixo btDetail. Ideal para a impressão de etiquetas e relatórios em colunas.
+15;RLDraw;Caixa de desenho para figuras geométricas.
+13;RLDBImage;Caixa de imagem ligada a campo de banco de dados.
+12;RLImage;Caixa de imagem.
+14;RLSystemInfo;Caixa de texto de com informações do sistema.
+6;RLAngleLabel;Caixa de texto de com rotação por ângulo.
+17;RLDBResult;Caixa de texto de resultado de operações matemáticas ou estatíticas com campos de banco de dados.
+7;RLDBText;Caixa de texto ligada a campo de banco de dados.
+9;RLDBMemo;Caixa de texto multilinhas ligada a campo de banco de dados.
+8;RLMemo;Caixa de texto multilinhas.
+19;RLDBBarcode;Componente para códigos de barras com campos de banco de dados.
+18;RLBarcode;Componente para códigos de barras.
+11;RLDBRichText;Componente para texto multilinhas em formato RichText ligado a campo de banco de dados.
+10;RLRichText;Componente para texto multilinhas em formato RichText.
+16;RLPanel;Container para controles.
+3;RLGroup;Insira bands sobre um componente de grupo para imprimir sequências de registros de dados. nA quebra de sequência dos registros será detectada automaticamente se for indicado um campo ou conjunto de campos através da propriedade DataFields.
+0;RLReport;Página do relatório.
+1;RLBand;Utilize a banda de impressão para representar registros de dados ou quebras de sequências de dados. Ela deve ser colocada dentro de um Report, Group ou SubDetail. nO comportamento da banda é controlado através da propriedade BandType.
+5;RLLabel;Utilize o TRLLabel para imprimir textos estáticos sobre o relatório.
+4;RLSubDetail;Utilize o TRLSubDetail para imprimir registros ou sequências de dados relacionadas com os registros da fontes de dados principal.

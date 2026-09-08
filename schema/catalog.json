@@ -1,0 +1,3232 @@
+{
+  "reltipoobjeto": [
+    {
+      "id": "2",
+      "nome": "RLDetailGrid",
+      "descricao": "Banda de tipo fixo btDetail. Ideal para a impressão de etiquetas e relatórios em colunas."
+    },
+    {
+      "id": "15",
+      "nome": "RLDraw",
+      "descricao": "Caixa de desenho para figuras geométricas."
+    },
+    {
+      "id": "13",
+      "nome": "RLDBImage",
+      "descricao": "Caixa de imagem ligada a campo de banco de dados."
+    },
+    {
+      "id": "12",
+      "nome": "RLImage",
+      "descricao": "Caixa de imagem."
+    },
+    {
+      "id": "14",
+      "nome": "RLSystemInfo",
+      "descricao": "Caixa de texto de com informações do sistema."
+    },
+    {
+      "id": "6",
+      "nome": "RLAngleLabel",
+      "descricao": "Caixa de texto de com rotação por ângulo."
+    },
+    {
+      "id": "17",
+      "nome": "RLDBResult",
+      "descricao": "Caixa de texto de resultado de operações matemáticas ou estatíticas com campos de banco de dados."
+    },
+    {
+      "id": "7",
+      "nome": "RLDBText",
+      "descricao": "Caixa de texto ligada a campo de banco de dados."
+    },
+    {
+      "id": "9",
+      "nome": "RLDBMemo",
+      "descricao": "Caixa de texto multilinhas ligada a campo de banco de dados."
+    },
+    {
+      "id": "8",
+      "nome": "RLMemo",
+      "descricao": "Caixa de texto multilinhas."
+    },
+    {
+      "id": "19",
+      "nome": "RLDBBarcode",
+      "descricao": "Componente para códigos de barras com campos de banco de dados."
+    },
+    {
+      "id": "18",
+      "nome": "RLBarcode",
+      "descricao": "Componente para códigos de barras."
+    },
+    {
+      "id": "11",
+      "nome": "RLDBRichText",
+      "descricao": "Componente para texto multilinhas em formato RichText ligado a campo de banco de dados."
+    },
+    {
+      "id": "10",
+      "nome": "RLRichText",
+      "descricao": "Componente para texto multilinhas em formato RichText."
+    },
+    {
+      "id": "16",
+      "nome": "RLPanel",
+      "descricao": "Container para controles."
+    },
+    {
+      "id": "3",
+      "nome": "RLGroup",
+      "descricao": "Insira bands sobre um componente de grupo para imprimir sequências de registros de dados. nA quebra de sequência dos registros será detectada automaticamente se for indicado um campo ou conjunto de campos através da propriedade DataFields."
+    },
+    {
+      "id": "0",
+      "nome": "RLReport",
+      "descricao": "Página do relatório."
+    },
+    {
+      "id": "1",
+      "nome": "RLBand",
+      "descricao": "Utilize a banda de impressão para representar registros de dados ou quebras de sequências de dados. Ela deve ser colocada dentro de um Report, Group ou SubDetail. nO comportamento da banda é controlado através da propriedade BandType."
+    },
+    {
+      "id": "5",
+      "nome": "RLLabel",
+      "descricao": "Utilize o TRLLabel para imprimir textos estáticos sobre o relatório."
+    },
+    {
+      "id": "4",
+      "nome": "RLSubDetail",
+      "descricao": "Utilize o TRLSubDetail para imprimir registros ou sequências de dados relacionadas com os registros da fontes de dados principal."
+    }
+  ],
+  "reltipopropriedade": [
+    {
+      "id": "7",
+      "nome": "BandType",
+      "ordem": "1",
+      "descricao": "0=Title\r\n1=Head\r\n2=ColumnHead\r\n3=Detail\r\n4=Sumary\r\n5=ColumnFooter\r\n6=Footer.",
+      "status": "1"
+    },
+    {
+      "id": "34",
+      "nome": "Align",
+      "ordem": "99",
+      "descricao": "Alinhamento melhorado. Pode assumir um dos seguintes valores: faLeft (Alinhado à esquerda), faTop (Alinhado acima), faRight (Alinhado à direita) ou faBottom (Alinhado abaixo).",
+      "status": "0"
+    },
+    {
+      "id": "20",
+      "nome": "Height",
+      "ordem": "15",
+      "descricao": "Altura do objeto.",
+      "status": "1"
+    },
+    {
+      "id": "62",
+      "nome": "Line-height",
+      "ordem": "0",
+      "descricao": "Altura padrão das linhas do elemento",
+      "status": "1"
+    },
+    {
+      "id": "4",
+      "nome": "AnchorsRight",
+      "ordem": "99",
+      "descricao": "Ancoramento a direita. Pode assumir um dos seguintes valores: True (ancorado) ou False (não ancorado).",
+      "status": "1"
+    },
+    {
+      "id": "3",
+      "nome": "AnchorsLeft",
+      "ordem": "99",
+      "descricao": "Ancoramento a esquerda. Pode assumir um dos seguintes valores: True (ancorado) ou False (não ancorado).",
+      "status": "1"
+    },
+    {
+      "id": "2",
+      "nome": "AnchorsBotton",
+      "ordem": "99",
+      "descricao": "Ancoramento inferior. Pode assumir um dos seguintes valores: True (ancorado) ou False (não ancorado).",
+      "status": "1"
+    },
+    {
+      "id": "5",
+      "nome": "AnchorsTop",
+      "ordem": "99",
+      "descricao": "Ancoramento superior. Pode assumir um dos seguintes valores: True (ancorado) ou False (não ancorado).",
+      "status": "1"
+    },
+    {
+      "id": "36",
+      "nome": "Angle",
+      "ordem": "99",
+      "descricao": "Ângulo de inclinação.",
+      "status": "0"
+    },
+    {
+      "id": "42",
+      "nome": "MasterFields",
+      "ordem": "99",
+      "descricao": "Campo externo para aplicação de filtro.",
+      "status": "0"
+    },
+    {
+      "id": "57",
+      "nome": "LinkedFields",
+      "ordem": "99",
+      "descricao": "Campo local para aplicação de filtro.",
+      "status": "0"
+    },
+    {
+      "id": "10",
+      "nome": "DataField",
+      "ordem": "50",
+      "descricao": "Campo relacionado ao banco de dados que será exibido pelo objeto.",
+      "status": "1"
+    },
+    {
+      "id": "59",
+      "nome": "LoadFromFile",
+      "ordem": "99",
+      "descricao": "Carrega informações de arquivo em disco.",
+      "status": "0"
+    },
+    {
+      "id": "50",
+      "nome": "LoadFromFile",
+      "ordem": "0",
+      "descricao": "Carrega relatório do caminho informado.",
+      "status": "0"
+    },
+    {
+      "id": "51",
+      "nome": "LoadFromField",
+      "ordem": "0",
+      "descricao": "Carrega relatório do campo informado.",
+      "status": "0"
+    },
+    {
+      "id": "24",
+      "nome": "AlternateColor",
+      "ordem": "99",
+      "descricao": "Cor alternativa para grade de informações.",
+      "status": "1"
+    },
+    {
+      "id": "45",
+      "nome": "FontColor",
+      "ordem": "99",
+      "descricao": "Define a cor da fonte utilizada no objeto.",
+      "status": "0"
+    },
+    {
+      "id": "53",
+      "nome": "HoldStyle",
+      "ordem": "98",
+      "descricao": "Define as regras de ancoragem entre dois controles.",
+      "status": "0"
+    },
+    {
+      "id": "17",
+      "nome": "FontName",
+      "ordem": "99",
+      "descricao": "Define o nome da fonte utilizada no objeto.",
+      "status": "1"
+    },
+    {
+      "id": "55",
+      "nome": "CarbonCopies",
+      "ordem": "99",
+      "descricao": "Define o número de cópias da Band",
+      "status": "0"
+    },
+    {
+      "id": "56",
+      "nome": "NextReport",
+      "ordem": "99",
+      "descricao": "Define o relatório a ser exibido na sequência.",
+      "status": "1"
+    },
+    {
+      "id": "18",
+      "nome": "FontSize",
+      "ordem": "99",
+      "descricao": "Define o tamanho da fonte utilizada no objeto.",
+      "status": "1"
+    },
+    {
+      "id": "40",
+      "nome": "BarcodeType",
+      "ordem": "99",
+      "descricao": "Define o tipo de código de barras a ser utilizado.",
+      "status": "0"
+    },
+    {
+      "id": "16",
+      "nome": "FontItalic",
+      "ordem": "99",
+      "descricao": "Define se a fonte do objeto será em itálico. Pode assumir um dos seguintes valores: True (fonte em itálico) ou False (fonte normal).",
+      "status": "1"
+    },
+    {
+      "id": "15",
+      "nome": "FontBold",
+      "ordem": "99",
+      "descricao": "Define se a fonte do objeto será em negrito. Pode assumir um dos seguintes valores: True (fonte em negrito) ou False (fonte normal).",
+      "status": "1"
+    },
+    {
+      "id": "19",
+      "nome": "FontUnderline",
+      "ordem": "99",
+      "descricao": "Define se a fonte do objeto será sublinhada. Pode assumir um dos seguintes valores: True (fonte sublinhada) ou False (fonte normal).",
+      "status": "1"
+    },
+    {
+      "id": "61",
+      "nome": "HolderHeight",
+      "ordem": "99",
+      "descricao": "Define se o objeto irá acompanhar a altura de outro objeto",
+      "status": "1"
+    },
+    {
+      "id": "60",
+      "nome": "isHTML",
+      "ordem": "99",
+      "descricao": "Define se o objeto irá exibir conteúdo HTML ou texto",
+      "status": "1"
+    },
+    {
+      "id": "13",
+      "nome": "BorderRight",
+      "ordem": "99",
+      "descricao": "Desenhar borda direita.",
+      "status": "1"
+    },
+    {
+      "id": "12",
+      "nome": "BorderLeft",
+      "ordem": "99",
+      "descricao": "Desenhar borda esquerda.",
+      "status": "1"
+    },
+    {
+      "id": "11",
+      "nome": "BorderBottom",
+      "ordem": "99",
+      "descricao": "Desenhar borda inferior.",
+      "status": "1"
+    },
+    {
+      "id": "14",
+      "nome": "BorderTop",
+      "ordem": "99",
+      "descricao": "Desenhar borda superior.",
+      "status": "1"
+    },
+    {
+      "id": "48",
+      "nome": "Organization",
+      "ordem": "99",
+      "descricao": "Determina a direção para a impressão das bandas.",
+      "status": "0"
+    },
+    {
+      "id": "46",
+      "nome": "ShowText",
+      "ordem": "99",
+      "descricao": "Determina se e como serão exibidas as informações junto com as barras.",
+      "status": "0"
+    },
+    {
+      "id": "21",
+      "nome": "IntegralHeight",
+      "ordem": "99",
+      "descricao": "Determina se o objeto deve ser imprsso integralmente.",
+      "status": "0"
+    },
+    {
+      "id": "30",
+      "nome": "Visible",
+      "ordem": "99",
+      "descricao": "Determina se o objeto será visível em tempo de impressão.",
+      "status": "1"
+    },
+    {
+      "id": "1",
+      "nome": "Alignment",
+      "ordem": "10",
+      "descricao": "Especifica como o texto deve ser alinhado dentro de um objeto. Pode assumir os seguinte valores: taLeftJustify (alinhado a esquerda), taCenter (centralizado) ou taRightJustify (alinhado a direita).",
+      "status": "1"
+    },
+    {
+      "id": "25",
+      "nome": "PageBreaking",
+      "ordem": "99",
+      "descricao": "Especifica se e como a band ou pager irá forçar a quebra de página. Pode assumir um dos seguintes valores: pbBeforePrInteger(A quebra de página será verificada antes da impressão) ou pbAfterPrInteger(A quebra de página será verificada após a impressão).",
+      "status": "1"
+    },
+    {
+      "id": "49",
+      "nome": "Currency",
+      "ordem": "99",
+      "descricao": "Especifica se o objeto exibe valores monetários.",
+      "status": "1"
+    },
+    {
+      "id": "58",
+      "nome": "ShowProgress",
+      "ordem": "99",
+      "descricao": "Exibe barra de progresso durante a criação do relatório.",
+      "status": "0"
+    },
+    {
+      "id": "52",
+      "nome": "DataFormula",
+      "ordem": "99",
+      "descricao": "Fórmula relacionada aos campos do banco de dados que será exibido pelo objeto.",
+      "status": "1"
+    },
+    {
+      "id": "44",
+      "nome": "Backgroud",
+      "ordem": "99",
+      "descricao": "Imagem de fundo.",
+      "status": "0"
+    },
+    {
+      "id": "31",
+      "nome": "Width",
+      "ordem": "15",
+      "descricao": "Largura do objeto.",
+      "status": "1"
+    },
+    {
+      "id": "37",
+      "nome": "Lines",
+      "ordem": "99",
+      "descricao": "Lista contendo as linhas de texto do memo.",
+      "status": "1"
+    },
+    {
+      "id": "26",
+      "nome": "MarginRight",
+      "ordem": "99",
+      "descricao": "Margem direita em milímetros.",
+      "status": "1"
+    },
+    {
+      "id": "23",
+      "nome": "MarginLeft",
+      "ordem": "99",
+      "descricao": "Margem esquerda em milímetros.",
+      "status": "1"
+    },
+    {
+      "id": "8",
+      "nome": "MarginBottom",
+      "ordem": "99",
+      "descricao": "Margem inferior em milímetros.",
+      "status": "1"
+    },
+    {
+      "id": "29",
+      "nome": "MarginTop",
+      "ordem": "99",
+      "descricao": "Margem superior em milímetros.",
+      "status": "1"
+    },
+    {
+      "id": "32",
+      "nome": "DisplayMask",
+      "ordem": "50",
+      "descricao": "Mascara de formatação.",
+      "status": "1"
+    },
+    {
+      "id": "33",
+      "nome": "Parent",
+      "ordem": "0",
+      "descricao": "Nome do controle de referência.",
+      "status": "1"
+    },
+    {
+      "id": "54",
+      "nome": "Holder",
+      "ordem": "99",
+      "descricao": "O mecanismo por trás da propriedade holder é um dos recursos mais interessantes do FortesReport. Esta propriedade aponta para um controle que servirá como âncora, como referência de posicionamento. É possível informar para um RLDBText de uma band detalhe que sua posição horizontal deve se mantêr sempre igual ao RLLabel correspondente no cabeçalho, indicando RLDBText.Holder:=RLLabel. Deste modo, ao mover o label do cabeçalho, em tempo de design ou impressão, o RLDBText será movido junto com ele. Há várias opções de ancoragem e também há a possibilidade de um controle possuir dois holders: um para referência horizontal e outro para vertical, por exemplo.",
+      "status": "0"
+    },
+    {
+      "id": "43",
+      "nome": "Orientation",
+      "ordem": "99",
+      "descricao": "Orientação do papel.\r\n0 = poPortrait\r\n1 = poLandscape.",
+      "status": "1"
+    },
+    {
+      "id": "28",
+      "nome": "Top",
+      "ordem": "10",
+      "descricao": "Posicionamento do objeto referente à parte superior.",
+      "status": "1"
+    },
+    {
+      "id": "22",
+      "nome": "Left",
+      "ordem": "15",
+      "descricao": "Posicionamento do objeto referente ao lado esquerdo.",
+      "status": "1"
+    },
+    {
+      "id": "6",
+      "nome": "AutoSize",
+      "ordem": "5",
+      "descricao": "Redimensionamento automático.",
+      "status": "1"
+    },
+    {
+      "id": "38",
+      "nome": "Picture",
+      "ordem": "99",
+      "descricao": "Representa a imagem que aparece no fundo do controle.",
+      "status": "0"
+    },
+    {
+      "id": "35",
+      "nome": "SQL",
+      "ordem": "99",
+      "descricao": "Sub consulta utilizada para preencher dados em sub-detail.",
+      "status": "1"
+    },
+    {
+      "id": "27",
+      "nome": "Text",
+      "ordem": "99",
+      "descricao": "Texto a ser exibido pelo objeto.",
+      "status": "1"
+    },
+    {
+      "id": "9",
+      "nome": "Caption",
+      "ordem": "99",
+      "descricao": "Texto a ser exibido pelo objeto.",
+      "status": "1"
+    },
+    {
+      "id": "47",
+      "nome": "DrawKind",
+      "ordem": "99",
+      "descricao": "Tipo de figura geométrica.",
+      "status": "0"
+    },
+    {
+      "id": "39",
+      "nome": "Info",
+      "ordem": "99",
+      "descricao": "Tipo de informação a ser exibida.",
+      "status": "1"
+    },
+    {
+      "id": "41",
+      "nome": "ColCount",
+      "ordem": "99",
+      "descricao": "Total de colunas da grid.",
+      "status": "0"
+    }
+  ],
+  "relobjetopropriedade": [
+    {
+      "id": "1",
+      "idtipoobjeto": "1",
+      "idtipopropriedade": "6"
+    },
+    {
+      "id": "2",
+      "idtipoobjeto": "1",
+      "idtipopropriedade": "7"
+    },
+    {
+      "id": "3",
+      "idtipoobjeto": "1",
+      "idtipopropriedade": "8"
+    },
+    {
+      "id": "4",
+      "idtipoobjeto": "1",
+      "idtipopropriedade": "11"
+    },
+    {
+      "id": "5",
+      "idtipoobjeto": "1",
+      "idtipopropriedade": "12"
+    },
+    {
+      "id": "6",
+      "idtipoobjeto": "1",
+      "idtipopropriedade": "13"
+    },
+    {
+      "id": "7",
+      "idtipoobjeto": "1",
+      "idtipopropriedade": "14"
+    },
+    {
+      "id": "8",
+      "idtipoobjeto": "1",
+      "idtipopropriedade": "15"
+    },
+    {
+      "id": "9",
+      "idtipoobjeto": "1",
+      "idtipopropriedade": "16"
+    },
+    {
+      "id": "10",
+      "idtipoobjeto": "1",
+      "idtipopropriedade": "17"
+    },
+    {
+      "id": "11",
+      "idtipoobjeto": "1",
+      "idtipopropriedade": "18"
+    },
+    {
+      "id": "12",
+      "idtipoobjeto": "1",
+      "idtipopropriedade": "19"
+    },
+    {
+      "id": "13",
+      "idtipoobjeto": "1",
+      "idtipopropriedade": "20"
+    },
+    {
+      "id": "14",
+      "idtipoobjeto": "1",
+      "idtipopropriedade": "21"
+    },
+    {
+      "id": "15",
+      "idtipoobjeto": "1",
+      "idtipopropriedade": "22"
+    },
+    {
+      "id": "16",
+      "idtipoobjeto": "1",
+      "idtipopropriedade": "23"
+    },
+    {
+      "id": "17",
+      "idtipoobjeto": "1",
+      "idtipopropriedade": "25"
+    },
+    {
+      "id": "18",
+      "idtipoobjeto": "1",
+      "idtipopropriedade": "26"
+    },
+    {
+      "id": "19",
+      "idtipoobjeto": "1",
+      "idtipopropriedade": "28"
+    },
+    {
+      "id": "20",
+      "idtipoobjeto": "1",
+      "idtipopropriedade": "29"
+    },
+    {
+      "id": "21",
+      "idtipoobjeto": "1",
+      "idtipopropriedade": "30"
+    },
+    {
+      "id": "22",
+      "idtipoobjeto": "1",
+      "idtipopropriedade": "31"
+    },
+    {
+      "id": "23",
+      "idtipoobjeto": "2",
+      "idtipopropriedade": "6"
+    },
+    {
+      "id": "24",
+      "idtipoobjeto": "2",
+      "idtipopropriedade": "8"
+    },
+    {
+      "id": "25",
+      "idtipoobjeto": "2",
+      "idtipopropriedade": "11"
+    },
+    {
+      "id": "26",
+      "idtipoobjeto": "2",
+      "idtipopropriedade": "12"
+    },
+    {
+      "id": "27",
+      "idtipoobjeto": "2",
+      "idtipopropriedade": "13"
+    },
+    {
+      "id": "28",
+      "idtipoobjeto": "2",
+      "idtipopropriedade": "14"
+    },
+    {
+      "id": "29",
+      "idtipoobjeto": "2",
+      "idtipopropriedade": "15"
+    },
+    {
+      "id": "30",
+      "idtipoobjeto": "2",
+      "idtipopropriedade": "16"
+    },
+    {
+      "id": "31",
+      "idtipoobjeto": "2",
+      "idtipopropriedade": "17"
+    },
+    {
+      "id": "32",
+      "idtipoobjeto": "2",
+      "idtipopropriedade": "18"
+    },
+    {
+      "id": "33",
+      "idtipoobjeto": "2",
+      "idtipopropriedade": "19"
+    },
+    {
+      "id": "34",
+      "idtipoobjeto": "2",
+      "idtipopropriedade": "20"
+    },
+    {
+      "id": "35",
+      "idtipoobjeto": "2",
+      "idtipopropriedade": "21"
+    },
+    {
+      "id": "36",
+      "idtipoobjeto": "2",
+      "idtipopropriedade": "22"
+    },
+    {
+      "id": "37",
+      "idtipoobjeto": "2",
+      "idtipopropriedade": "23"
+    },
+    {
+      "id": "38",
+      "idtipoobjeto": "2",
+      "idtipopropriedade": "25"
+    },
+    {
+      "id": "39",
+      "idtipoobjeto": "2",
+      "idtipopropriedade": "26"
+    },
+    {
+      "id": "40",
+      "idtipoobjeto": "2",
+      "idtipopropriedade": "28"
+    },
+    {
+      "id": "41",
+      "idtipoobjeto": "2",
+      "idtipopropriedade": "29"
+    },
+    {
+      "id": "42",
+      "idtipoobjeto": "2",
+      "idtipopropriedade": "30"
+    },
+    {
+      "id": "43",
+      "idtipoobjeto": "2",
+      "idtipopropriedade": "31"
+    },
+    {
+      "id": "44",
+      "idtipoobjeto": "2",
+      "idtipopropriedade": "41"
+    },
+    {
+      "id": "45",
+      "idtipoobjeto": "3",
+      "idtipopropriedade": "8"
+    },
+    {
+      "id": "46",
+      "idtipoobjeto": "3",
+      "idtipopropriedade": "10"
+    },
+    {
+      "id": "47",
+      "idtipoobjeto": "3",
+      "idtipopropriedade": "11"
+    },
+    {
+      "id": "48",
+      "idtipoobjeto": "3",
+      "idtipopropriedade": "12"
+    },
+    {
+      "id": "49",
+      "idtipoobjeto": "3",
+      "idtipopropriedade": "13"
+    },
+    {
+      "id": "50",
+      "idtipoobjeto": "3",
+      "idtipopropriedade": "14"
+    },
+    {
+      "id": "51",
+      "idtipoobjeto": "3",
+      "idtipopropriedade": "15"
+    },
+    {
+      "id": "52",
+      "idtipoobjeto": "3",
+      "idtipopropriedade": "16"
+    },
+    {
+      "id": "53",
+      "idtipoobjeto": "3",
+      "idtipopropriedade": "17"
+    },
+    {
+      "id": "54",
+      "idtipoobjeto": "3",
+      "idtipopropriedade": "18"
+    },
+    {
+      "id": "55",
+      "idtipoobjeto": "3",
+      "idtipopropriedade": "19"
+    },
+    {
+      "id": "56",
+      "idtipoobjeto": "3",
+      "idtipopropriedade": "20"
+    },
+    {
+      "id": "57",
+      "idtipoobjeto": "3",
+      "idtipopropriedade": "22"
+    },
+    {
+      "id": "58",
+      "idtipoobjeto": "3",
+      "idtipopropriedade": "23"
+    },
+    {
+      "id": "59",
+      "idtipoobjeto": "3",
+      "idtipopropriedade": "25"
+    },
+    {
+      "id": "60",
+      "idtipoobjeto": "3",
+      "idtipopropriedade": "26"
+    },
+    {
+      "id": "61",
+      "idtipoobjeto": "3",
+      "idtipopropriedade": "28"
+    },
+    {
+      "id": "62",
+      "idtipoobjeto": "3",
+      "idtipopropriedade": "29"
+    },
+    {
+      "id": "63",
+      "idtipoobjeto": "3",
+      "idtipopropriedade": "30"
+    },
+    {
+      "id": "64",
+      "idtipoobjeto": "3",
+      "idtipopropriedade": "31"
+    },
+    {
+      "id": "65",
+      "idtipoobjeto": "4",
+      "idtipopropriedade": "8"
+    },
+    {
+      "id": "66",
+      "idtipoobjeto": "4",
+      "idtipopropriedade": "11"
+    },
+    {
+      "id": "67",
+      "idtipoobjeto": "4",
+      "idtipopropriedade": "12"
+    },
+    {
+      "id": "68",
+      "idtipoobjeto": "4",
+      "idtipopropriedade": "13"
+    },
+    {
+      "id": "69",
+      "idtipoobjeto": "4",
+      "idtipopropriedade": "14"
+    },
+    {
+      "id": "70",
+      "idtipoobjeto": "4",
+      "idtipopropriedade": "15"
+    },
+    {
+      "id": "71",
+      "idtipoobjeto": "4",
+      "idtipopropriedade": "16"
+    },
+    {
+      "id": "72",
+      "idtipoobjeto": "4",
+      "idtipopropriedade": "17"
+    },
+    {
+      "id": "73",
+      "idtipoobjeto": "4",
+      "idtipopropriedade": "18"
+    },
+    {
+      "id": "74",
+      "idtipoobjeto": "4",
+      "idtipopropriedade": "19"
+    },
+    {
+      "id": "75",
+      "idtipoobjeto": "4",
+      "idtipopropriedade": "20"
+    },
+    {
+      "id": "76",
+      "idtipoobjeto": "4",
+      "idtipopropriedade": "22"
+    },
+    {
+      "id": "77",
+      "idtipoobjeto": "4",
+      "idtipopropriedade": "23"
+    },
+    {
+      "id": "78",
+      "idtipoobjeto": "4",
+      "idtipopropriedade": "25"
+    },
+    {
+      "id": "79",
+      "idtipoobjeto": "4",
+      "idtipopropriedade": "26"
+    },
+    {
+      "id": "80",
+      "idtipoobjeto": "4",
+      "idtipopropriedade": "28"
+    },
+    {
+      "id": "81",
+      "idtipoobjeto": "4",
+      "idtipopropriedade": "29"
+    },
+    {
+      "id": "82",
+      "idtipoobjeto": "4",
+      "idtipopropriedade": "30"
+    },
+    {
+      "id": "83",
+      "idtipoobjeto": "4",
+      "idtipopropriedade": "31"
+    },
+    {
+      "id": "84",
+      "idtipoobjeto": "4",
+      "idtipopropriedade": "35"
+    },
+    {
+      "id": "85",
+      "idtipoobjeto": "4",
+      "idtipopropriedade": "42"
+    },
+    {
+      "id": "86",
+      "idtipoobjeto": "5",
+      "idtipopropriedade": "1"
+    },
+    {
+      "id": "87",
+      "idtipoobjeto": "5",
+      "idtipopropriedade": "2"
+    },
+    {
+      "id": "88",
+      "idtipoobjeto": "5",
+      "idtipopropriedade": "3"
+    },
+    {
+      "id": "89",
+      "idtipoobjeto": "5",
+      "idtipopropriedade": "4"
+    },
+    {
+      "id": "90",
+      "idtipoobjeto": "5",
+      "idtipopropriedade": "5"
+    },
+    {
+      "id": "91",
+      "idtipoobjeto": "5",
+      "idtipopropriedade": "6"
+    },
+    {
+      "id": "92",
+      "idtipoobjeto": "5",
+      "idtipopropriedade": "9"
+    },
+    {
+      "id": "93",
+      "idtipoobjeto": "5",
+      "idtipopropriedade": "11"
+    },
+    {
+      "id": "94",
+      "idtipoobjeto": "5",
+      "idtipopropriedade": "12"
+    },
+    {
+      "id": "95",
+      "idtipoobjeto": "5",
+      "idtipopropriedade": "13"
+    },
+    {
+      "id": "96",
+      "idtipoobjeto": "5",
+      "idtipopropriedade": "14"
+    },
+    {
+      "id": "97",
+      "idtipoobjeto": "5",
+      "idtipopropriedade": "15"
+    },
+    {
+      "id": "98",
+      "idtipoobjeto": "5",
+      "idtipopropriedade": "16"
+    },
+    {
+      "id": "99",
+      "idtipoobjeto": "5",
+      "idtipopropriedade": "17"
+    },
+    {
+      "id": "100",
+      "idtipoobjeto": "5",
+      "idtipopropriedade": "18"
+    },
+    {
+      "id": "101",
+      "idtipoobjeto": "5",
+      "idtipopropriedade": "19"
+    },
+    {
+      "id": "102",
+      "idtipoobjeto": "5",
+      "idtipopropriedade": "20"
+    },
+    {
+      "id": "103",
+      "idtipoobjeto": "5",
+      "idtipopropriedade": "22"
+    },
+    {
+      "id": "104",
+      "idtipoobjeto": "5",
+      "idtipopropriedade": "28"
+    },
+    {
+      "id": "105",
+      "idtipoobjeto": "5",
+      "idtipopropriedade": "30"
+    },
+    {
+      "id": "106",
+      "idtipoobjeto": "5",
+      "idtipopropriedade": "34"
+    },
+    {
+      "id": "107",
+      "idtipoobjeto": "6",
+      "idtipopropriedade": "1"
+    },
+    {
+      "id": "108",
+      "idtipoobjeto": "6",
+      "idtipopropriedade": "2"
+    },
+    {
+      "id": "109",
+      "idtipoobjeto": "6",
+      "idtipopropriedade": "3"
+    },
+    {
+      "id": "110",
+      "idtipoobjeto": "6",
+      "idtipopropriedade": "4"
+    },
+    {
+      "id": "111",
+      "idtipoobjeto": "6",
+      "idtipopropriedade": "5"
+    },
+    {
+      "id": "112",
+      "idtipoobjeto": "6",
+      "idtipopropriedade": "6"
+    },
+    {
+      "id": "113",
+      "idtipoobjeto": "6",
+      "idtipopropriedade": "9"
+    },
+    {
+      "id": "114",
+      "idtipoobjeto": "6",
+      "idtipopropriedade": "11"
+    },
+    {
+      "id": "115",
+      "idtipoobjeto": "6",
+      "idtipopropriedade": "12"
+    },
+    {
+      "id": "116",
+      "idtipoobjeto": "6",
+      "idtipopropriedade": "13"
+    },
+    {
+      "id": "117",
+      "idtipoobjeto": "6",
+      "idtipopropriedade": "14"
+    },
+    {
+      "id": "118",
+      "idtipoobjeto": "6",
+      "idtipopropriedade": "15"
+    },
+    {
+      "id": "119",
+      "idtipoobjeto": "6",
+      "idtipopropriedade": "16"
+    },
+    {
+      "id": "120",
+      "idtipoobjeto": "6",
+      "idtipopropriedade": "17"
+    },
+    {
+      "id": "121",
+      "idtipoobjeto": "6",
+      "idtipopropriedade": "18"
+    },
+    {
+      "id": "122",
+      "idtipoobjeto": "6",
+      "idtipopropriedade": "19"
+    },
+    {
+      "id": "123",
+      "idtipoobjeto": "6",
+      "idtipopropriedade": "20"
+    },
+    {
+      "id": "124",
+      "idtipoobjeto": "6",
+      "idtipopropriedade": "22"
+    },
+    {
+      "id": "125",
+      "idtipoobjeto": "6",
+      "idtipopropriedade": "28"
+    },
+    {
+      "id": "126",
+      "idtipoobjeto": "6",
+      "idtipopropriedade": "30"
+    },
+    {
+      "id": "127",
+      "idtipoobjeto": "6",
+      "idtipopropriedade": "31"
+    },
+    {
+      "id": "128",
+      "idtipoobjeto": "6",
+      "idtipopropriedade": "36"
+    },
+    {
+      "id": "129",
+      "idtipoobjeto": "7",
+      "idtipopropriedade": "1"
+    },
+    {
+      "id": "130",
+      "idtipoobjeto": "7",
+      "idtipopropriedade": "2"
+    },
+    {
+      "id": "131",
+      "idtipoobjeto": "7",
+      "idtipopropriedade": "3"
+    },
+    {
+      "id": "132",
+      "idtipoobjeto": "7",
+      "idtipopropriedade": "4"
+    },
+    {
+      "id": "133",
+      "idtipoobjeto": "7",
+      "idtipopropriedade": "5"
+    },
+    {
+      "id": "134",
+      "idtipoobjeto": "7",
+      "idtipopropriedade": "6"
+    },
+    {
+      "id": "135",
+      "idtipoobjeto": "7",
+      "idtipopropriedade": "10"
+    },
+    {
+      "id": "136",
+      "idtipoobjeto": "7",
+      "idtipopropriedade": "11"
+    },
+    {
+      "id": "137",
+      "idtipoobjeto": "7",
+      "idtipopropriedade": "12"
+    },
+    {
+      "id": "138",
+      "idtipoobjeto": "7",
+      "idtipopropriedade": "13"
+    },
+    {
+      "id": "139",
+      "idtipoobjeto": "7",
+      "idtipopropriedade": "14"
+    },
+    {
+      "id": "140",
+      "idtipoobjeto": "7",
+      "idtipopropriedade": "15"
+    },
+    {
+      "id": "141",
+      "idtipoobjeto": "7",
+      "idtipopropriedade": "16"
+    },
+    {
+      "id": "142",
+      "idtipoobjeto": "7",
+      "idtipopropriedade": "17"
+    },
+    {
+      "id": "143",
+      "idtipoobjeto": "7",
+      "idtipopropriedade": "18"
+    },
+    {
+      "id": "144",
+      "idtipoobjeto": "7",
+      "idtipopropriedade": "19"
+    },
+    {
+      "id": "145",
+      "idtipoobjeto": "7",
+      "idtipopropriedade": "20"
+    },
+    {
+      "id": "146",
+      "idtipoobjeto": "7",
+      "idtipopropriedade": "22"
+    },
+    {
+      "id": "147",
+      "idtipoobjeto": "7",
+      "idtipopropriedade": "27"
+    },
+    {
+      "id": "148",
+      "idtipoobjeto": "7",
+      "idtipopropriedade": "28"
+    },
+    {
+      "id": "149",
+      "idtipoobjeto": "7",
+      "idtipopropriedade": "30"
+    },
+    {
+      "id": "150",
+      "idtipoobjeto": "7",
+      "idtipopropriedade": "31"
+    },
+    {
+      "id": "151",
+      "idtipoobjeto": "7",
+      "idtipopropriedade": "32"
+    },
+    {
+      "id": "152",
+      "idtipoobjeto": "7",
+      "idtipopropriedade": "34"
+    },
+    {
+      "id": "153",
+      "idtipoobjeto": "8",
+      "idtipopropriedade": "1"
+    },
+    {
+      "id": "154",
+      "idtipoobjeto": "8",
+      "idtipopropriedade": "2"
+    },
+    {
+      "id": "155",
+      "idtipoobjeto": "8",
+      "idtipopropriedade": "3"
+    },
+    {
+      "id": "156",
+      "idtipoobjeto": "8",
+      "idtipopropriedade": "4"
+    },
+    {
+      "id": "157",
+      "idtipoobjeto": "8",
+      "idtipopropriedade": "5"
+    },
+    {
+      "id": "158",
+      "idtipoobjeto": "8",
+      "idtipopropriedade": "6"
+    },
+    {
+      "id": "159",
+      "idtipoobjeto": "8",
+      "idtipopropriedade": "11"
+    },
+    {
+      "id": "160",
+      "idtipoobjeto": "8",
+      "idtipopropriedade": "12"
+    },
+    {
+      "id": "161",
+      "idtipoobjeto": "8",
+      "idtipopropriedade": "13"
+    },
+    {
+      "id": "162",
+      "idtipoobjeto": "8",
+      "idtipopropriedade": "14"
+    },
+    {
+      "id": "163",
+      "idtipoobjeto": "8",
+      "idtipopropriedade": "15"
+    },
+    {
+      "id": "164",
+      "idtipoobjeto": "8",
+      "idtipopropriedade": "16"
+    },
+    {
+      "id": "165",
+      "idtipoobjeto": "8",
+      "idtipopropriedade": "17"
+    },
+    {
+      "id": "166",
+      "idtipoobjeto": "8",
+      "idtipopropriedade": "18"
+    },
+    {
+      "id": "167",
+      "idtipoobjeto": "8",
+      "idtipopropriedade": "19"
+    },
+    {
+      "id": "168",
+      "idtipoobjeto": "8",
+      "idtipopropriedade": "20"
+    },
+    {
+      "id": "169",
+      "idtipoobjeto": "8",
+      "idtipopropriedade": "21"
+    },
+    {
+      "id": "170",
+      "idtipoobjeto": "8",
+      "idtipopropriedade": "22"
+    },
+    {
+      "id": "171",
+      "idtipoobjeto": "8",
+      "idtipopropriedade": "28"
+    },
+    {
+      "id": "172",
+      "idtipoobjeto": "8",
+      "idtipopropriedade": "30"
+    },
+    {
+      "id": "173",
+      "idtipoobjeto": "8",
+      "idtipopropriedade": "31"
+    },
+    {
+      "id": "174",
+      "idtipoobjeto": "8",
+      "idtipopropriedade": "34"
+    },
+    {
+      "id": "175",
+      "idtipoobjeto": "8",
+      "idtipopropriedade": "37"
+    },
+    {
+      "id": "176",
+      "idtipoobjeto": "9",
+      "idtipopropriedade": "1"
+    },
+    {
+      "id": "177",
+      "idtipoobjeto": "9",
+      "idtipopropriedade": "2"
+    },
+    {
+      "id": "178",
+      "idtipoobjeto": "9",
+      "idtipopropriedade": "3"
+    },
+    {
+      "id": "179",
+      "idtipoobjeto": "9",
+      "idtipopropriedade": "4"
+    },
+    {
+      "id": "180",
+      "idtipoobjeto": "9",
+      "idtipopropriedade": "5"
+    },
+    {
+      "id": "181",
+      "idtipoobjeto": "9",
+      "idtipopropriedade": "6"
+    },
+    {
+      "id": "182",
+      "idtipoobjeto": "9",
+      "idtipopropriedade": "11"
+    },
+    {
+      "id": "183",
+      "idtipoobjeto": "9",
+      "idtipopropriedade": "12"
+    },
+    {
+      "id": "184",
+      "idtipoobjeto": "9",
+      "idtipopropriedade": "13"
+    },
+    {
+      "id": "185",
+      "idtipoobjeto": "9",
+      "idtipopropriedade": "14"
+    },
+    {
+      "id": "186",
+      "idtipoobjeto": "9",
+      "idtipopropriedade": "15"
+    },
+    {
+      "id": "187",
+      "idtipoobjeto": "9",
+      "idtipopropriedade": "16"
+    },
+    {
+      "id": "188",
+      "idtipoobjeto": "9",
+      "idtipopropriedade": "17"
+    },
+    {
+      "id": "189",
+      "idtipoobjeto": "9",
+      "idtipopropriedade": "18"
+    },
+    {
+      "id": "190",
+      "idtipoobjeto": "9",
+      "idtipopropriedade": "19"
+    },
+    {
+      "id": "191",
+      "idtipoobjeto": "9",
+      "idtipopropriedade": "20"
+    },
+    {
+      "id": "192",
+      "idtipoobjeto": "9",
+      "idtipopropriedade": "21"
+    },
+    {
+      "id": "193",
+      "idtipoobjeto": "9",
+      "idtipopropriedade": "22"
+    },
+    {
+      "id": "194",
+      "idtipoobjeto": "9",
+      "idtipopropriedade": "28"
+    },
+    {
+      "id": "195",
+      "idtipoobjeto": "9",
+      "idtipopropriedade": "30"
+    },
+    {
+      "id": "196",
+      "idtipoobjeto": "9",
+      "idtipopropriedade": "31"
+    },
+    {
+      "id": "197",
+      "idtipoobjeto": "9",
+      "idtipopropriedade": "34"
+    },
+    {
+      "id": "198",
+      "idtipoobjeto": "9",
+      "idtipopropriedade": "10"
+    },
+    {
+      "id": "199",
+      "idtipoobjeto": "10",
+      "idtipopropriedade": "1"
+    },
+    {
+      "id": "200",
+      "idtipoobjeto": "10",
+      "idtipopropriedade": "2"
+    },
+    {
+      "id": "201",
+      "idtipoobjeto": "10",
+      "idtipopropriedade": "3"
+    },
+    {
+      "id": "202",
+      "idtipoobjeto": "10",
+      "idtipopropriedade": "4"
+    },
+    {
+      "id": "203",
+      "idtipoobjeto": "10",
+      "idtipopropriedade": "5"
+    },
+    {
+      "id": "204",
+      "idtipoobjeto": "10",
+      "idtipopropriedade": "6"
+    },
+    {
+      "id": "205",
+      "idtipoobjeto": "10",
+      "idtipopropriedade": "11"
+    },
+    {
+      "id": "206",
+      "idtipoobjeto": "10",
+      "idtipopropriedade": "12"
+    },
+    {
+      "id": "207",
+      "idtipoobjeto": "10",
+      "idtipopropriedade": "13"
+    },
+    {
+      "id": "208",
+      "idtipoobjeto": "10",
+      "idtipopropriedade": "14"
+    },
+    {
+      "id": "209",
+      "idtipoobjeto": "10",
+      "idtipopropriedade": "15"
+    },
+    {
+      "id": "210",
+      "idtipoobjeto": "10",
+      "idtipopropriedade": "16"
+    },
+    {
+      "id": "211",
+      "idtipoobjeto": "10",
+      "idtipopropriedade": "17"
+    },
+    {
+      "id": "212",
+      "idtipoobjeto": "10",
+      "idtipopropriedade": "18"
+    },
+    {
+      "id": "213",
+      "idtipoobjeto": "10",
+      "idtipopropriedade": "19"
+    },
+    {
+      "id": "214",
+      "idtipoobjeto": "10",
+      "idtipopropriedade": "20"
+    },
+    {
+      "id": "215",
+      "idtipoobjeto": "10",
+      "idtipopropriedade": "21"
+    },
+    {
+      "id": "216",
+      "idtipoobjeto": "10",
+      "idtipopropriedade": "22"
+    },
+    {
+      "id": "217",
+      "idtipoobjeto": "10",
+      "idtipopropriedade": "28"
+    },
+    {
+      "id": "218",
+      "idtipoobjeto": "10",
+      "idtipopropriedade": "30"
+    },
+    {
+      "id": "219",
+      "idtipoobjeto": "10",
+      "idtipopropriedade": "31"
+    },
+    {
+      "id": "220",
+      "idtipoobjeto": "10",
+      "idtipopropriedade": "34"
+    },
+    {
+      "id": "221",
+      "idtipoobjeto": "10",
+      "idtipopropriedade": "37"
+    },
+    {
+      "id": "222",
+      "idtipoobjeto": "11",
+      "idtipopropriedade": "1"
+    },
+    {
+      "id": "223",
+      "idtipoobjeto": "11",
+      "idtipopropriedade": "2"
+    },
+    {
+      "id": "224",
+      "idtipoobjeto": "11",
+      "idtipopropriedade": "3"
+    },
+    {
+      "id": "225",
+      "idtipoobjeto": "11",
+      "idtipopropriedade": "4"
+    },
+    {
+      "id": "226",
+      "idtipoobjeto": "11",
+      "idtipopropriedade": "5"
+    },
+    {
+      "id": "227",
+      "idtipoobjeto": "11",
+      "idtipopropriedade": "6"
+    },
+    {
+      "id": "228",
+      "idtipoobjeto": "11",
+      "idtipopropriedade": "11"
+    },
+    {
+      "id": "229",
+      "idtipoobjeto": "11",
+      "idtipopropriedade": "12"
+    },
+    {
+      "id": "230",
+      "idtipoobjeto": "11",
+      "idtipopropriedade": "13"
+    },
+    {
+      "id": "231",
+      "idtipoobjeto": "11",
+      "idtipopropriedade": "14"
+    },
+    {
+      "id": "232",
+      "idtipoobjeto": "11",
+      "idtipopropriedade": "15"
+    },
+    {
+      "id": "233",
+      "idtipoobjeto": "11",
+      "idtipopropriedade": "16"
+    },
+    {
+      "id": "234",
+      "idtipoobjeto": "11",
+      "idtipopropriedade": "17"
+    },
+    {
+      "id": "235",
+      "idtipoobjeto": "11",
+      "idtipopropriedade": "18"
+    },
+    {
+      "id": "236",
+      "idtipoobjeto": "11",
+      "idtipopropriedade": "19"
+    },
+    {
+      "id": "237",
+      "idtipoobjeto": "11",
+      "idtipopropriedade": "20"
+    },
+    {
+      "id": "238",
+      "idtipoobjeto": "11",
+      "idtipopropriedade": "21"
+    },
+    {
+      "id": "239",
+      "idtipoobjeto": "11",
+      "idtipopropriedade": "22"
+    },
+    {
+      "id": "240",
+      "idtipoobjeto": "11",
+      "idtipopropriedade": "28"
+    },
+    {
+      "id": "241",
+      "idtipoobjeto": "11",
+      "idtipopropriedade": "30"
+    },
+    {
+      "id": "242",
+      "idtipoobjeto": "11",
+      "idtipopropriedade": "31"
+    },
+    {
+      "id": "243",
+      "idtipoobjeto": "11",
+      "idtipopropriedade": "34"
+    },
+    {
+      "id": "244",
+      "idtipoobjeto": "11",
+      "idtipopropriedade": "10"
+    },
+    {
+      "id": "245",
+      "idtipoobjeto": "12",
+      "idtipopropriedade": "2"
+    },
+    {
+      "id": "246",
+      "idtipoobjeto": "12",
+      "idtipopropriedade": "3"
+    },
+    {
+      "id": "247",
+      "idtipoobjeto": "12",
+      "idtipopropriedade": "4"
+    },
+    {
+      "id": "248",
+      "idtipoobjeto": "12",
+      "idtipopropriedade": "5"
+    },
+    {
+      "id": "249",
+      "idtipoobjeto": "12",
+      "idtipopropriedade": "6"
+    },
+    {
+      "id": "250",
+      "idtipoobjeto": "12",
+      "idtipopropriedade": "11"
+    },
+    {
+      "id": "251",
+      "idtipoobjeto": "12",
+      "idtipopropriedade": "12"
+    },
+    {
+      "id": "252",
+      "idtipoobjeto": "12",
+      "idtipopropriedade": "13"
+    },
+    {
+      "id": "253",
+      "idtipoobjeto": "12",
+      "idtipopropriedade": "14"
+    },
+    {
+      "id": "254",
+      "idtipoobjeto": "12",
+      "idtipopropriedade": "20"
+    },
+    {
+      "id": "255",
+      "idtipoobjeto": "12",
+      "idtipopropriedade": "22"
+    },
+    {
+      "id": "256",
+      "idtipoobjeto": "12",
+      "idtipopropriedade": "28"
+    },
+    {
+      "id": "257",
+      "idtipoobjeto": "12",
+      "idtipopropriedade": "30"
+    },
+    {
+      "id": "258",
+      "idtipoobjeto": "12",
+      "idtipopropriedade": "31"
+    },
+    {
+      "id": "259",
+      "idtipoobjeto": "12",
+      "idtipopropriedade": "34"
+    },
+    {
+      "id": "260",
+      "idtipoobjeto": "12",
+      "idtipopropriedade": "38"
+    },
+    {
+      "id": "261",
+      "idtipoobjeto": "13",
+      "idtipopropriedade": "2"
+    },
+    {
+      "id": "262",
+      "idtipoobjeto": "13",
+      "idtipopropriedade": "3"
+    },
+    {
+      "id": "263",
+      "idtipoobjeto": "13",
+      "idtipopropriedade": "4"
+    },
+    {
+      "id": "264",
+      "idtipoobjeto": "13",
+      "idtipopropriedade": "5"
+    },
+    {
+      "id": "265",
+      "idtipoobjeto": "13",
+      "idtipopropriedade": "6"
+    },
+    {
+      "id": "266",
+      "idtipoobjeto": "13",
+      "idtipopropriedade": "11"
+    },
+    {
+      "id": "267",
+      "idtipoobjeto": "13",
+      "idtipopropriedade": "12"
+    },
+    {
+      "id": "268",
+      "idtipoobjeto": "13",
+      "idtipopropriedade": "13"
+    },
+    {
+      "id": "269",
+      "idtipoobjeto": "13",
+      "idtipopropriedade": "14"
+    },
+    {
+      "id": "270",
+      "idtipoobjeto": "13",
+      "idtipopropriedade": "20"
+    },
+    {
+      "id": "271",
+      "idtipoobjeto": "13",
+      "idtipopropriedade": "22"
+    },
+    {
+      "id": "272",
+      "idtipoobjeto": "13",
+      "idtipopropriedade": "28"
+    },
+    {
+      "id": "273",
+      "idtipoobjeto": "13",
+      "idtipopropriedade": "30"
+    },
+    {
+      "id": "274",
+      "idtipoobjeto": "13",
+      "idtipopropriedade": "31"
+    },
+    {
+      "id": "275",
+      "idtipoobjeto": "13",
+      "idtipopropriedade": "34"
+    },
+    {
+      "id": "276",
+      "idtipoobjeto": "13",
+      "idtipopropriedade": "10"
+    },
+    {
+      "id": "277",
+      "idtipoobjeto": "14",
+      "idtipopropriedade": "27"
+    },
+    {
+      "id": "278",
+      "idtipoobjeto": "14",
+      "idtipopropriedade": "39"
+    },
+    {
+      "id": "279",
+      "idtipoobjeto": "14",
+      "idtipopropriedade": "1"
+    },
+    {
+      "id": "280",
+      "idtipoobjeto": "14",
+      "idtipopropriedade": "4"
+    },
+    {
+      "id": "281",
+      "idtipoobjeto": "14",
+      "idtipopropriedade": "3"
+    },
+    {
+      "id": "282",
+      "idtipoobjeto": "14",
+      "idtipopropriedade": "4"
+    },
+    {
+      "id": "283",
+      "idtipoobjeto": "14",
+      "idtipopropriedade": "5"
+    },
+    {
+      "id": "284",
+      "idtipoobjeto": "14",
+      "idtipopropriedade": "6"
+    },
+    {
+      "id": "285",
+      "idtipoobjeto": "14",
+      "idtipopropriedade": "11"
+    },
+    {
+      "id": "286",
+      "idtipoobjeto": "14",
+      "idtipopropriedade": "12"
+    },
+    {
+      "id": "287",
+      "idtipoobjeto": "14",
+      "idtipopropriedade": "13"
+    },
+    {
+      "id": "288",
+      "idtipoobjeto": "14",
+      "idtipopropriedade": "14"
+    },
+    {
+      "id": "289",
+      "idtipoobjeto": "14",
+      "idtipopropriedade": "15"
+    },
+    {
+      "id": "290",
+      "idtipoobjeto": "14",
+      "idtipopropriedade": "16"
+    },
+    {
+      "id": "291",
+      "idtipoobjeto": "14",
+      "idtipopropriedade": "17"
+    },
+    {
+      "id": "292",
+      "idtipoobjeto": "14",
+      "idtipopropriedade": "18"
+    },
+    {
+      "id": "293",
+      "idtipoobjeto": "14",
+      "idtipopropriedade": "19"
+    },
+    {
+      "id": "294",
+      "idtipoobjeto": "14",
+      "idtipopropriedade": "20"
+    },
+    {
+      "id": "295",
+      "idtipoobjeto": "14",
+      "idtipopropriedade": "22"
+    },
+    {
+      "id": "296",
+      "idtipoobjeto": "4",
+      "idtipopropriedade": "57"
+    },
+    {
+      "id": "297",
+      "idtipoobjeto": "14",
+      "idtipopropriedade": "28"
+    },
+    {
+      "id": "298",
+      "idtipoobjeto": "14",
+      "idtipopropriedade": "30"
+    },
+    {
+      "id": "299",
+      "idtipoobjeto": "14",
+      "idtipopropriedade": "31"
+    },
+    {
+      "id": "300",
+      "idtipoobjeto": "14",
+      "idtipopropriedade": "32"
+    },
+    {
+      "id": "301",
+      "idtipoobjeto": "14",
+      "idtipopropriedade": "34"
+    },
+    {
+      "id": "302",
+      "idtipoobjeto": "15",
+      "idtipopropriedade": "2"
+    },
+    {
+      "id": "303",
+      "idtipoobjeto": "15",
+      "idtipopropriedade": "3"
+    },
+    {
+      "id": "304",
+      "idtipoobjeto": "15",
+      "idtipopropriedade": "4"
+    },
+    {
+      "id": "305",
+      "idtipoobjeto": "15",
+      "idtipopropriedade": "5"
+    },
+    {
+      "id": "306",
+      "idtipoobjeto": "15",
+      "idtipopropriedade": "11"
+    },
+    {
+      "id": "307",
+      "idtipoobjeto": "15",
+      "idtipopropriedade": "12"
+    },
+    {
+      "id": "308",
+      "idtipoobjeto": "15",
+      "idtipopropriedade": "13"
+    },
+    {
+      "id": "309",
+      "idtipoobjeto": "15",
+      "idtipopropriedade": "14"
+    },
+    {
+      "id": "310",
+      "idtipoobjeto": "15",
+      "idtipopropriedade": "15"
+    },
+    {
+      "id": "311",
+      "idtipoobjeto": "15",
+      "idtipopropriedade": "16"
+    },
+    {
+      "id": "312",
+      "idtipoobjeto": "15",
+      "idtipopropriedade": "17"
+    },
+    {
+      "id": "313",
+      "idtipoobjeto": "15",
+      "idtipopropriedade": "18"
+    },
+    {
+      "id": "314",
+      "idtipoobjeto": "15",
+      "idtipopropriedade": "19"
+    },
+    {
+      "id": "315",
+      "idtipoobjeto": "15",
+      "idtipopropriedade": "20"
+    },
+    {
+      "id": "316",
+      "idtipoobjeto": "15",
+      "idtipopropriedade": "22"
+    },
+    {
+      "id": "317",
+      "idtipoobjeto": "15",
+      "idtipopropriedade": "28"
+    },
+    {
+      "id": "318",
+      "idtipoobjeto": "15",
+      "idtipopropriedade": "30"
+    },
+    {
+      "id": "319",
+      "idtipoobjeto": "15",
+      "idtipopropriedade": "31"
+    },
+    {
+      "id": "320",
+      "idtipoobjeto": "15",
+      "idtipopropriedade": "34"
+    },
+    {
+      "id": "321",
+      "idtipoobjeto": "15",
+      "idtipopropriedade": "36"
+    },
+    {
+      "id": "322",
+      "idtipoobjeto": "16",
+      "idtipopropriedade": "1"
+    },
+    {
+      "id": "323",
+      "idtipoobjeto": "16",
+      "idtipopropriedade": "2"
+    },
+    {
+      "id": "324",
+      "idtipoobjeto": "16",
+      "idtipopropriedade": "3"
+    },
+    {
+      "id": "325",
+      "idtipoobjeto": "16",
+      "idtipopropriedade": "4"
+    },
+    {
+      "id": "326",
+      "idtipoobjeto": "16",
+      "idtipopropriedade": "5"
+    },
+    {
+      "id": "327",
+      "idtipoobjeto": "16",
+      "idtipopropriedade": "6"
+    },
+    {
+      "id": "328",
+      "idtipoobjeto": "16",
+      "idtipopropriedade": "8"
+    },
+    {
+      "id": "329",
+      "idtipoobjeto": "16",
+      "idtipopropriedade": "11"
+    },
+    {
+      "id": "330",
+      "idtipoobjeto": "16",
+      "idtipopropriedade": "12"
+    },
+    {
+      "id": "331",
+      "idtipoobjeto": "16",
+      "idtipopropriedade": "13"
+    },
+    {
+      "id": "332",
+      "idtipoobjeto": "16",
+      "idtipopropriedade": "14"
+    },
+    {
+      "id": "333",
+      "idtipoobjeto": "16",
+      "idtipopropriedade": "15"
+    },
+    {
+      "id": "334",
+      "idtipoobjeto": "16",
+      "idtipopropriedade": "16"
+    },
+    {
+      "id": "335",
+      "idtipoobjeto": "16",
+      "idtipopropriedade": "17"
+    },
+    {
+      "id": "336",
+      "idtipoobjeto": "16",
+      "idtipopropriedade": "18"
+    },
+    {
+      "id": "337",
+      "idtipoobjeto": "16",
+      "idtipopropriedade": "19"
+    },
+    {
+      "id": "338",
+      "idtipoobjeto": "16",
+      "idtipopropriedade": "20"
+    },
+    {
+      "id": "339",
+      "idtipoobjeto": "16",
+      "idtipopropriedade": "22"
+    },
+    {
+      "id": "340",
+      "idtipoobjeto": "16",
+      "idtipopropriedade": "23"
+    },
+    {
+      "id": "341",
+      "idtipoobjeto": "16",
+      "idtipopropriedade": "26"
+    },
+    {
+      "id": "342",
+      "idtipoobjeto": "16",
+      "idtipopropriedade": "28"
+    },
+    {
+      "id": "343",
+      "idtipoobjeto": "16",
+      "idtipopropriedade": "29"
+    },
+    {
+      "id": "344",
+      "idtipoobjeto": "16",
+      "idtipopropriedade": "30"
+    },
+    {
+      "id": "345",
+      "idtipoobjeto": "16",
+      "idtipopropriedade": "31"
+    },
+    {
+      "id": "346",
+      "idtipoobjeto": "16",
+      "idtipopropriedade": "34"
+    },
+    {
+      "id": "347",
+      "idtipoobjeto": "17",
+      "idtipopropriedade": "1"
+    },
+    {
+      "id": "348",
+      "idtipoobjeto": "17",
+      "idtipopropriedade": "4"
+    },
+    {
+      "id": "349",
+      "idtipoobjeto": "17",
+      "idtipopropriedade": "3"
+    },
+    {
+      "id": "350",
+      "idtipoobjeto": "17",
+      "idtipopropriedade": "4"
+    },
+    {
+      "id": "351",
+      "idtipoobjeto": "17",
+      "idtipopropriedade": "5"
+    },
+    {
+      "id": "352",
+      "idtipoobjeto": "17",
+      "idtipopropriedade": "6"
+    },
+    {
+      "id": "353",
+      "idtipoobjeto": "17",
+      "idtipopropriedade": "10"
+    },
+    {
+      "id": "354",
+      "idtipoobjeto": "17",
+      "idtipopropriedade": "11"
+    },
+    {
+      "id": "355",
+      "idtipoobjeto": "17",
+      "idtipopropriedade": "12"
+    },
+    {
+      "id": "356",
+      "idtipoobjeto": "17",
+      "idtipopropriedade": "13"
+    },
+    {
+      "id": "357",
+      "idtipoobjeto": "17",
+      "idtipopropriedade": "14"
+    },
+    {
+      "id": "358",
+      "idtipoobjeto": "17",
+      "idtipopropriedade": "15"
+    },
+    {
+      "id": "359",
+      "idtipoobjeto": "17",
+      "idtipopropriedade": "16"
+    },
+    {
+      "id": "360",
+      "idtipoobjeto": "17",
+      "idtipopropriedade": "17"
+    },
+    {
+      "id": "361",
+      "idtipoobjeto": "17",
+      "idtipopropriedade": "18"
+    },
+    {
+      "id": "362",
+      "idtipoobjeto": "17",
+      "idtipopropriedade": "19"
+    },
+    {
+      "id": "363",
+      "idtipoobjeto": "17",
+      "idtipopropriedade": "20"
+    },
+    {
+      "id": "364",
+      "idtipoobjeto": "17",
+      "idtipopropriedade": "22"
+    },
+    {
+      "id": "365",
+      "idtipoobjeto": "17",
+      "idtipopropriedade": "27"
+    },
+    {
+      "id": "366",
+      "idtipoobjeto": "17",
+      "idtipopropriedade": "28"
+    },
+    {
+      "id": "367",
+      "idtipoobjeto": "17",
+      "idtipopropriedade": "30"
+    },
+    {
+      "id": "368",
+      "idtipoobjeto": "17",
+      "idtipopropriedade": "31"
+    },
+    {
+      "id": "369",
+      "idtipoobjeto": "17",
+      "idtipopropriedade": "32"
+    },
+    {
+      "id": "370",
+      "idtipoobjeto": "17",
+      "idtipopropriedade": "34"
+    },
+    {
+      "id": "371",
+      "idtipoobjeto": "17",
+      "idtipopropriedade": "39"
+    },
+    {
+      "id": "372",
+      "idtipoobjeto": "18",
+      "idtipopropriedade": "1"
+    },
+    {
+      "id": "373",
+      "idtipoobjeto": "18",
+      "idtipopropriedade": "2"
+    },
+    {
+      "id": "374",
+      "idtipoobjeto": "18",
+      "idtipopropriedade": "3"
+    },
+    {
+      "id": "375",
+      "idtipoobjeto": "18",
+      "idtipopropriedade": "4"
+    },
+    {
+      "id": "376",
+      "idtipoobjeto": "18",
+      "idtipopropriedade": "5"
+    },
+    {
+      "id": "377",
+      "idtipoobjeto": "18",
+      "idtipopropriedade": "6"
+    },
+    {
+      "id": "378",
+      "idtipoobjeto": "18",
+      "idtipopropriedade": "8"
+    },
+    {
+      "id": "379",
+      "idtipoobjeto": "18",
+      "idtipopropriedade": "9"
+    },
+    {
+      "id": "380",
+      "idtipoobjeto": "18",
+      "idtipopropriedade": "11"
+    },
+    {
+      "id": "381",
+      "idtipoobjeto": "18",
+      "idtipopropriedade": "12"
+    },
+    {
+      "id": "382",
+      "idtipoobjeto": "18",
+      "idtipopropriedade": "13"
+    },
+    {
+      "id": "383",
+      "idtipoobjeto": "18",
+      "idtipopropriedade": "14"
+    },
+    {
+      "id": "384",
+      "idtipoobjeto": "18",
+      "idtipopropriedade": "15"
+    },
+    {
+      "id": "385",
+      "idtipoobjeto": "18",
+      "idtipopropriedade": "16"
+    },
+    {
+      "id": "386",
+      "idtipoobjeto": "18",
+      "idtipopropriedade": "17"
+    },
+    {
+      "id": "387",
+      "idtipoobjeto": "18",
+      "idtipopropriedade": "18"
+    },
+    {
+      "id": "388",
+      "idtipoobjeto": "18",
+      "idtipopropriedade": "19"
+    },
+    {
+      "id": "389",
+      "idtipoobjeto": "18",
+      "idtipopropriedade": "20"
+    },
+    {
+      "id": "390",
+      "idtipoobjeto": "18",
+      "idtipopropriedade": "22"
+    },
+    {
+      "id": "391",
+      "idtipoobjeto": "18",
+      "idtipopropriedade": "23"
+    },
+    {
+      "id": "392",
+      "idtipoobjeto": "18",
+      "idtipopropriedade": "26"
+    },
+    {
+      "id": "393",
+      "idtipoobjeto": "18",
+      "idtipopropriedade": "28"
+    },
+    {
+      "id": "394",
+      "idtipoobjeto": "18",
+      "idtipopropriedade": "29"
+    },
+    {
+      "id": "395",
+      "idtipoobjeto": "18",
+      "idtipopropriedade": "30"
+    },
+    {
+      "id": "396",
+      "idtipoobjeto": "18",
+      "idtipopropriedade": "31"
+    },
+    {
+      "id": "397",
+      "idtipoobjeto": "18",
+      "idtipopropriedade": "34"
+    },
+    {
+      "id": "398",
+      "idtipoobjeto": "18",
+      "idtipopropriedade": "40"
+    },
+    {
+      "id": "399",
+      "idtipoobjeto": "19",
+      "idtipopropriedade": "3"
+    },
+    {
+      "id": "400",
+      "idtipoobjeto": "19",
+      "idtipopropriedade": "4"
+    },
+    {
+      "id": "401",
+      "idtipoobjeto": "19",
+      "idtipopropriedade": "5"
+    },
+    {
+      "id": "402",
+      "idtipoobjeto": "19",
+      "idtipopropriedade": "6"
+    },
+    {
+      "id": "403",
+      "idtipoobjeto": "19",
+      "idtipopropriedade": "8"
+    },
+    {
+      "id": "404",
+      "idtipoobjeto": "19",
+      "idtipopropriedade": "10"
+    },
+    {
+      "id": "405",
+      "idtipoobjeto": "19",
+      "idtipopropriedade": "11"
+    },
+    {
+      "id": "406",
+      "idtipoobjeto": "19",
+      "idtipopropriedade": "12"
+    },
+    {
+      "id": "407",
+      "idtipoobjeto": "19",
+      "idtipopropriedade": "13"
+    },
+    {
+      "id": "408",
+      "idtipoobjeto": "19",
+      "idtipopropriedade": "14"
+    },
+    {
+      "id": "409",
+      "idtipoobjeto": "19",
+      "idtipopropriedade": "15"
+    },
+    {
+      "id": "410",
+      "idtipoobjeto": "19",
+      "idtipopropriedade": "16"
+    },
+    {
+      "id": "411",
+      "idtipoobjeto": "19",
+      "idtipopropriedade": "17"
+    },
+    {
+      "id": "412",
+      "idtipoobjeto": "19",
+      "idtipopropriedade": "18"
+    },
+    {
+      "id": "413",
+      "idtipoobjeto": "19",
+      "idtipopropriedade": "19"
+    },
+    {
+      "id": "414",
+      "idtipoobjeto": "19",
+      "idtipopropriedade": "20"
+    },
+    {
+      "id": "415",
+      "idtipoobjeto": "19",
+      "idtipopropriedade": "22"
+    },
+    {
+      "id": "416",
+      "idtipoobjeto": "19",
+      "idtipopropriedade": "23"
+    },
+    {
+      "id": "417",
+      "idtipoobjeto": "19",
+      "idtipopropriedade": "26"
+    },
+    {
+      "id": "418",
+      "idtipoobjeto": "19",
+      "idtipopropriedade": "28"
+    },
+    {
+      "id": "419",
+      "idtipoobjeto": "19",
+      "idtipopropriedade": "29"
+    },
+    {
+      "id": "420",
+      "idtipoobjeto": "19",
+      "idtipopropriedade": "30"
+    },
+    {
+      "id": "421",
+      "idtipoobjeto": "19",
+      "idtipopropriedade": "31"
+    },
+    {
+      "id": "422",
+      "idtipoobjeto": "19",
+      "idtipopropriedade": "34"
+    },
+    {
+      "id": "423",
+      "idtipoobjeto": "19",
+      "idtipopropriedade": "40"
+    },
+    {
+      "id": "424",
+      "idtipoobjeto": "5",
+      "idtipopropriedade": "31"
+    },
+    {
+      "id": "425",
+      "idtipoobjeto": "0",
+      "idtipopropriedade": "29"
+    },
+    {
+      "id": "426",
+      "idtipoobjeto": "0",
+      "idtipopropriedade": "26"
+    },
+    {
+      "id": "427",
+      "idtipoobjeto": "0",
+      "idtipopropriedade": "23"
+    },
+    {
+      "id": "428",
+      "idtipoobjeto": "0",
+      "idtipopropriedade": "8"
+    },
+    {
+      "id": "429",
+      "idtipoobjeto": "0",
+      "idtipopropriedade": "19"
+    },
+    {
+      "id": "430",
+      "idtipoobjeto": "0",
+      "idtipopropriedade": "18"
+    },
+    {
+      "id": "431",
+      "idtipoobjeto": "0",
+      "idtipopropriedade": "17"
+    },
+    {
+      "id": "432",
+      "idtipoobjeto": "0",
+      "idtipopropriedade": "16"
+    },
+    {
+      "id": "433",
+      "idtipoobjeto": "0",
+      "idtipopropriedade": "15"
+    },
+    {
+      "id": "434",
+      "idtipoobjeto": "0",
+      "idtipopropriedade": "14"
+    },
+    {
+      "id": "435",
+      "idtipoobjeto": "0",
+      "idtipopropriedade": "13"
+    },
+    {
+      "id": "436",
+      "idtipoobjeto": "0",
+      "idtipopropriedade": "12"
+    },
+    {
+      "id": "437",
+      "idtipoobjeto": "0",
+      "idtipopropriedade": "11"
+    },
+    {
+      "id": "438",
+      "idtipoobjeto": "0",
+      "idtipopropriedade": "43"
+    },
+    {
+      "id": "439",
+      "idtipoobjeto": "0",
+      "idtipopropriedade": "44"
+    },
+    {
+      "id": "440",
+      "idtipoobjeto": "19",
+      "idtipopropriedade": "45"
+    },
+    {
+      "id": "441",
+      "idtipoobjeto": "18",
+      "idtipopropriedade": "45"
+    },
+    {
+      "id": "442",
+      "idtipoobjeto": "17",
+      "idtipopropriedade": "45"
+    },
+    {
+      "id": "443",
+      "idtipoobjeto": "14",
+      "idtipopropriedade": "45"
+    },
+    {
+      "id": "444",
+      "idtipoobjeto": "9",
+      "idtipopropriedade": "45"
+    },
+    {
+      "id": "445",
+      "idtipoobjeto": "8",
+      "idtipopropriedade": "45"
+    },
+    {
+      "id": "446",
+      "idtipoobjeto": "7",
+      "idtipopropriedade": "45"
+    },
+    {
+      "id": "447",
+      "idtipoobjeto": "6",
+      "idtipopropriedade": "45"
+    },
+    {
+      "id": "448",
+      "idtipoobjeto": "5",
+      "idtipopropriedade": "45"
+    },
+    {
+      "id": "449",
+      "idtipoobjeto": "4",
+      "idtipopropriedade": "45"
+    },
+    {
+      "id": "450",
+      "idtipoobjeto": "3",
+      "idtipopropriedade": "45"
+    },
+    {
+      "id": "451",
+      "idtipoobjeto": "2",
+      "idtipopropriedade": "45"
+    },
+    {
+      "id": "452",
+      "idtipoobjeto": "1",
+      "idtipopropriedade": "45"
+    },
+    {
+      "id": "453",
+      "idtipoobjeto": "0",
+      "idtipopropriedade": "45"
+    },
+    {
+      "id": "454",
+      "idtipoobjeto": "1",
+      "idtipopropriedade": "24"
+    },
+    {
+      "id": "455",
+      "idtipoobjeto": "18",
+      "idtipopropriedade": "46"
+    },
+    {
+      "id": "456",
+      "idtipoobjeto": "19",
+      "idtipopropriedade": "46"
+    },
+    {
+      "id": "457",
+      "idtipoobjeto": "15",
+      "idtipopropriedade": "47"
+    },
+    {
+      "id": "458",
+      "idtipoobjeto": "2",
+      "idtipopropriedade": "48"
+    },
+    {
+      "id": "459",
+      "idtipoobjeto": "17",
+      "idtipopropriedade": "49"
+    },
+    {
+      "id": "460",
+      "idtipoobjeto": "7",
+      "idtipopropriedade": "49"
+    },
+    {
+      "id": "461",
+      "idtipoobjeto": "0",
+      "idtipopropriedade": "51"
+    },
+    {
+      "id": "462",
+      "idtipoobjeto": "0",
+      "idtipopropriedade": "50"
+    },
+    {
+      "id": "463",
+      "idtipoobjeto": "7",
+      "idtipopropriedade": "52"
+    },
+    {
+      "id": "464",
+      "idtipoobjeto": "17",
+      "idtipopropriedade": "52"
+    },
+    {
+      "id": "465",
+      "idtipoobjeto": "11",
+      "idtipopropriedade": "52"
+    },
+    {
+      "id": "466",
+      "idtipoobjeto": "9",
+      "idtipopropriedade": "52"
+    },
+    {
+      "id": "467",
+      "idtipoobjeto": "5",
+      "idtipopropriedade": "54"
+    },
+    {
+      "id": "468",
+      "idtipoobjeto": "6",
+      "idtipopropriedade": "54"
+    },
+    {
+      "id": "469",
+      "idtipoobjeto": "7",
+      "idtipopropriedade": "54"
+    },
+    {
+      "id": "470",
+      "idtipoobjeto": "8",
+      "idtipopropriedade": "54"
+    },
+    {
+      "id": "471",
+      "idtipoobjeto": "9",
+      "idtipopropriedade": "54"
+    },
+    {
+      "id": "472",
+      "idtipoobjeto": "10",
+      "idtipopropriedade": "54"
+    },
+    {
+      "id": "473",
+      "idtipoobjeto": "11",
+      "idtipopropriedade": "54"
+    },
+    {
+      "id": "474",
+      "idtipoobjeto": "12",
+      "idtipopropriedade": "54"
+    },
+    {
+      "id": "475",
+      "idtipoobjeto": "13",
+      "idtipopropriedade": "54"
+    },
+    {
+      "id": "476",
+      "idtipoobjeto": "14",
+      "idtipopropriedade": "54"
+    },
+    {
+      "id": "477",
+      "idtipoobjeto": "15",
+      "idtipopropriedade": "54"
+    },
+    {
+      "id": "478",
+      "idtipoobjeto": "16",
+      "idtipopropriedade": "54"
+    },
+    {
+      "id": "479",
+      "idtipoobjeto": "17",
+      "idtipopropriedade": "54"
+    },
+    {
+      "id": "480",
+      "idtipoobjeto": "18",
+      "idtipopropriedade": "54"
+    },
+    {
+      "id": "481",
+      "idtipoobjeto": "19",
+      "idtipopropriedade": "54"
+    },
+    {
+      "id": "482",
+      "idtipoobjeto": "5",
+      "idtipopropriedade": "53"
+    },
+    {
+      "id": "483",
+      "idtipoobjeto": "6",
+      "idtipopropriedade": "53"
+    },
+    {
+      "id": "484",
+      "idtipoobjeto": "7",
+      "idtipopropriedade": "53"
+    },
+    {
+      "id": "485",
+      "idtipoobjeto": "8",
+      "idtipopropriedade": "53"
+    },
+    {
+      "id": "486",
+      "idtipoobjeto": "9",
+      "idtipopropriedade": "53"
+    },
+    {
+      "id": "487",
+      "idtipoobjeto": "10",
+      "idtipopropriedade": "53"
+    },
+    {
+      "id": "488",
+      "idtipoobjeto": "11",
+      "idtipopropriedade": "53"
+    },
+    {
+      "id": "489",
+      "idtipoobjeto": "12",
+      "idtipopropriedade": "53"
+    },
+    {
+      "id": "490",
+      "idtipoobjeto": "13",
+      "idtipopropriedade": "53"
+    },
+    {
+      "id": "491",
+      "idtipoobjeto": "14",
+      "idtipopropriedade": "53"
+    },
+    {
+      "id": "492",
+      "idtipoobjeto": "15",
+      "idtipopropriedade": "53"
+    },
+    {
+      "id": "493",
+      "idtipoobjeto": "16",
+      "idtipopropriedade": "53"
+    },
+    {
+      "id": "494",
+      "idtipoobjeto": "17",
+      "idtipopropriedade": "53"
+    },
+    {
+      "id": "495",
+      "idtipoobjeto": "18",
+      "idtipopropriedade": "53"
+    },
+    {
+      "id": "496",
+      "idtipoobjeto": "19",
+      "idtipopropriedade": "53"
+    },
+    {
+      "id": "497",
+      "idtipoobjeto": "1",
+      "idtipopropriedade": "55"
+    },
+    {
+      "id": "498",
+      "idtipoobjeto": "0",
+      "idtipopropriedade": "56"
+    },
+    {
+      "id": "499",
+      "idtipoobjeto": "0",
+      "idtipopropriedade": "58"
+    },
+    {
+      "id": "500",
+      "idtipoobjeto": "8",
+      "idtipopropriedade": "59"
+    },
+    {
+      "id": "501",
+      "idtipoobjeto": "10",
+      "idtipopropriedade": "59"
+    },
+    {
+      "id": "502",
+      "idtipoobjeto": "1",
+      "idtipopropriedade": "33"
+    },
+    {
+      "id": "503",
+      "idtipoobjeto": "2",
+      "idtipopropriedade": "33"
+    },
+    {
+      "id": "504",
+      "idtipoobjeto": "3",
+      "idtipopropriedade": "33"
+    },
+    {
+      "id": "505",
+      "idtipoobjeto": "4",
+      "idtipopropriedade": "33"
+    },
+    {
+      "id": "506",
+      "idtipoobjeto": "5",
+      "idtipopropriedade": "33"
+    },
+    {
+      "id": "507",
+      "idtipoobjeto": "6",
+      "idtipopropriedade": "33"
+    },
+    {
+      "id": "508",
+      "idtipoobjeto": "7",
+      "idtipopropriedade": "33"
+    },
+    {
+      "id": "509",
+      "idtipoobjeto": "8",
+      "idtipopropriedade": "33"
+    },
+    {
+      "id": "510",
+      "idtipoobjeto": "9",
+      "idtipopropriedade": "33"
+    },
+    {
+      "id": "511",
+      "idtipoobjeto": "10",
+      "idtipopropriedade": "33"
+    },
+    {
+      "id": "512",
+      "idtipoobjeto": "11",
+      "idtipopropriedade": "33"
+    },
+    {
+      "id": "513",
+      "idtipoobjeto": "12",
+      "idtipopropriedade": "33"
+    },
+    {
+      "id": "514",
+      "idtipoobjeto": "13",
+      "idtipopropriedade": "33"
+    },
+    {
+      "id": "515",
+      "idtipoobjeto": "14",
+      "idtipopropriedade": "33"
+    },
+    {
+      "id": "516",
+      "idtipoobjeto": "15",
+      "idtipopropriedade": "33"
+    },
+    {
+      "id": "517",
+      "idtipoobjeto": "16",
+      "idtipopropriedade": "33"
+    },
+    {
+      "id": "518",
+      "idtipoobjeto": "17",
+      "idtipopropriedade": "33"
+    },
+    {
+      "id": "519",
+      "idtipoobjeto": "18",
+      "idtipopropriedade": "33"
+    },
+    {
+      "id": "520",
+      "idtipoobjeto": "19",
+      "idtipopropriedade": "33"
+    },
+    {
+      "id": "521",
+      "idtipoobjeto": "8",
+      "idtipopropriedade": "60"
+    },
+    {
+      "id": "522",
+      "idtipoobjeto": "9",
+      "idtipopropriedade": "60"
+    },
+    {
+      "id": "523",
+      "idtipoobjeto": "10",
+      "idtipopropriedade": "60"
+    },
+    {
+      "id": "524",
+      "idtipoobjeto": "11",
+      "idtipopropriedade": "60"
+    },
+    {
+      "id": "525",
+      "idtipoobjeto": "5",
+      "idtipopropriedade": "61"
+    },
+    {
+      "id": "526",
+      "idtipoobjeto": "6",
+      "idtipopropriedade": "61"
+    },
+    {
+      "id": "527",
+      "idtipoobjeto": "7",
+      "idtipopropriedade": "61"
+    },
+    {
+      "id": "528",
+      "idtipoobjeto": "8",
+      "idtipopropriedade": "61"
+    },
+    {
+      "id": "529",
+      "idtipoobjeto": "9",
+      "idtipopropriedade": "61"
+    },
+    {
+      "id": "530",
+      "idtipoobjeto": "10",
+      "idtipopropriedade": "61"
+    },
+    {
+      "id": "531",
+      "idtipoobjeto": "11",
+      "idtipopropriedade": "61"
+    },
+    {
+      "id": "532",
+      "idtipoobjeto": "17",
+      "idtipopropriedade": "61"
+    },
+    {
+      "id": "533",
+      "idtipoobjeto": "1",
+      "idtipopropriedade": "62"
+    },
+    {
+      "id": "534",
+      "idtipoobjeto": "8",
+      "idtipopropriedade": "62"
+    },
+    {
+      "id": "535",
+      "idtipoobjeto": "9",
+      "idtipopropriedade": "62"
+    },
+    {
+      "id": "536",
+      "idtipoobjeto": "10",
+      "idtipopropriedade": "62"
+    },
+    {
+      "id": "537",
+      "idtipoobjeto": "11",
+      "idtipopropriedade": "62"
+    },
+    {
+      "id": "538",
+      "idtipoobjeto": "7",
+      "idtipopropriedade": "60"
+    }
+  ]
+}
